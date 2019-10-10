@@ -1,6 +1,6 @@
 (This page has been migrated from [Thingiverse](https://www.thingiverse.com/thing:3843001) and is now the most up-to-date resource for Jubilee)
 
-![Jubilee](/pics/jubilee-professional-headshot-brightened.jpg =640x)
+![Jubilee](/pics/jubilee-professional-headshot-brightened.jpg)
 
 Welcome to the Jubilee Project Landing Page
 
