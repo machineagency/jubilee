@@ -1,11 +1,11 @@
-(This page has been migrated from [Thingiverse](https://www.thingiverse.com/thing:3843001) and is now the most up-to-date resource for Jubilee)
+(This page is being migrated from [Thingiverse](https://www.thingiverse.com/thing:3843001) and will eventually be the most up-to-date resource for Jubilee)
 
 ![Jubilee](/pics/jubilee-professional-headshot-brightened.jpg)
 
 Welcome to the Jubilee Project Landing Page
 
 Jubilee is an extensible multi-tool motion platform capable of running GCode for non-loadbearing automation applications.
-Out-of-the-box, Jubilee is configured for multimaterial 3D printing and multicolor pen plotting, but we've had success with light liquid-handling and high-res image stitching applications as well.
+Out-of-the-box, Jubilee is configured for multimaterial 3D printing and multicolor pen plotting, but we've had success with light liquid-handling and image stitching applications too.
 Jubilee is meant to be extended by the community. Have a new tool to add to the repository? Simply check our [contributing]() guidlelines and submit a pull request.
 
 ## File Structure
@@ -23,4 +23,4 @@ Jubilee is meant to be extended by the community. Have a new tool to add to the 
 
 
 ## Who are we?
-Jubilee was designed by [Joshua Vasquez](http://www.doublejumpelectric.com/) of the Machine Agency Lab at the University of Washington.
+Jubilee was designed with love by [Joshua Vasquez](http://www.doublejumpelectric.com/) of the [Machine Agency Lab](http://depts.washington.edu/machines/) at the University of Washington.
