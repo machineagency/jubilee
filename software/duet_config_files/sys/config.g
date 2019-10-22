@@ -53,7 +53,7 @@ M671 X300:5:152.5 Y316:316:-14 S5 ; Front Left: (300, 316) | Front Right: (5, 31
 M350 X16 Y16 Z16 E16 U4 I1              ; Set 16x microstepping for axes & extruder, 4x for toolchanger lock. Use interpolation.
 M574 X1 Y1 Z1 S1                        ; Set homing switch configuration x low-end, y low-end, z low-end, all active-high (NC)
 M574 U1 S1                              ; Set homing switch configuration for toolchange lock. Both switches should be wired NC and in series.
-M906 X1920 Y1920 Z1600 E1250 U900 I60   ; Motor currents (mA)
+M906 X1800 Y1800 Z1600 E1250 U900 I60   ; Motor currents (mA)
 M201 X1300 Y1300 Z20 E1300 U1000          ; Accelerations (mm/s^2)
 M203 X20000 Y20000 Z800 E8000 U10000    ; Maximum speeds (mm/min)
 M566 X1400 Y1400 Z2 E3000 U200          ; Maximum jerk speeds mm/minute
