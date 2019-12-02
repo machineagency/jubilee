@@ -26,8 +26,7 @@ Read more about the history of Jubilee on [Hackaday](https://hackaday.com/2019/1
 
 1. Budget: **$1600** for the Frame and **$200** per extruder tool
 1. Order: all parts in the [Bill of Materials][bom]
-1. Print and laser-cut all parts in the [/fabrication_exports](/fabrication_exports) folder
-  - _NOTE: Laser-cut parts are also [available for purchase](https://www.seemecnc.com/products/jubilee-laser-cut-delrin-piece-kit) as a kit_
+1. Print and laser-cut all parts in the [/fabrication_exports](/fabrication_exports) folder (_NOTE: Laser-cut parts are also [available for purchase](https://www.seemecnc.com/products/jubilee-laser-cut-delrin-piece-kit) as a kit_)
 
 ## Support
 
