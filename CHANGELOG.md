@@ -11,6 +11,7 @@ All changes between releases are tracked here.
 
 ### Changed
 - Frame was adjusted to accommodate larger tools and a build volume of 300x300x300mm
+- Jubilee Coupling Plate was modified slightly to more easily lock E3D tool plates
 - Back Panel bolt hole pattern now accommodates either a set of Duet2 + Duex5 boards or a set of Duet3 + 2 expansion boards + Raspi 
 - Front opening has more clearance for bed plate removal 
 - ZYLTech Leadscrews are now 375mm long
