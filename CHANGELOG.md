@@ -10,7 +10,7 @@ All changes between releases are tracked here.
 - New [Bill of Materials](https://docs.google.com/spreadsheets/d/1pRzBQxVzL9c4T9b1RrKvSjlSwJJhJ7NcbSV6iJUv0X0/edit?usp=sharing). All parts that were added, changed-in-size, or increased in value since the V1 BOM are highlighted in yellow.
 
 ### Changed
-- Frame was adjusted to accommodate larger tools and a build volume of 300x300x300mm
+- Frame was adjusted to accommodate larger tools and a build volume of 300x300x300mm. Size update also fixes issue [#4](https://github.com/machineagency/jubilee/issues/4)
 - Dowel pin spacing on the Coupling Plate was modified slightly to more easily lock E3D tool plates
 - Back Panel bolt hole pattern now accommodates either a set of Duet2 + Duex5 boards or a set of Duet3 + 2 expansion boards + Raspi 
 - Front opening has more clearance for bed plate removal 
@@ -24,6 +24,7 @@ All changes between releases are tracked here.
 - 3D Printed Feet are now easier to assemble and ~$30 cheaper
 - All M2 Dowel Pins were replaced with set screws for easier assembly.
 - Toolchanger Elastic Lock Actuator was redesigned for ease of assembly. Using a V1 lock will still work though
+- The BOM lists the embedded magnet build plate as the default since it fixes issue [#3](https://github.com/machineagency/jubilee/issues/3)
 
 The following parts *must* be reprinted since Release 1.0.0:
 - [Front Left Bed Coupling Lift](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/front_left_bed_coupling_lift.STL)
