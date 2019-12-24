@@ -7,17 +7,17 @@ All changes between releases are tracked here.
 
 ### Added
 - Jubilee V2, *Cubilee*
-- New [Bill of Materials](https://docs.google.com/spreadsheets/d/1pRzBQxVzL9c4T9b1RrKvSjlSwJJhJ7NcbSV6iJUv0X0/edit?usp=sharing)
+- New [Bill of Materials](https://docs.google.com/spreadsheets/d/1pRzBQxVzL9c4T9b1RrKvSjlSwJJhJ7NcbSV6iJUv0X0/edit?usp=sharing). All parts that were added, changed-in-size, or increased in value since the V1 BOM are highlighted in yellow.
 
 ### Changed
 - Frame was adjusted to accommodate larger tools and a build volume of 300x300x300mm
-- Jubilee Coupling Plate was modified slightly to more easily lock E3D tool plates
+- Dowel pin spacing on the Coupling Plate was modified slightly to more easily lock E3D tool plates
 - Back Panel bolt hole pattern now accommodates either a set of Duet2 + Duex5 boards or a set of Duet3 + 2 expansion boards + Raspi 
 - Front opening has more clearance for bed plate removal 
 - ZYLTech Leadscrews are now 375mm long
-- Side Panel Sizes
-- Back Panel Size
-- Crossbar Size
+- Side Panel Sizes are slightly larger
+- Back Panel Size is slightly larger
+- Crossbar Size is slightly longer. New [DXF](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/machined_parts/crossbar/crossbar_6mm_for_400mm_mgn12_rail.DXF)
 - Belt lengths are now slightly longer
 - X-axis MGN12 rail
 - Z-axis MGN12 rail
@@ -36,7 +36,6 @@ The following parts *must* be reprinted since Release 1.0.0:
 The following parts have minor changes, but do not need to be reprinted:
 - [Left Motor Corner Bracket Spacer](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/left_motor_corner_bracket_spacer.STL)
 - [Right Motor Corner Bracket Spacer](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/right_motor_corner_bracket_spacer.STL)
-
 - [Left Double Pulley Corner Bracket](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/left_double_pulley_corner_bracket.STL)
 - [Right Double Pulley Corner Bracket](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/right_double_pulley_corner_bracket.STL)
 - [Front Left Leadscrew Retainer](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/front_left_leadscrew_retainer.STL)
