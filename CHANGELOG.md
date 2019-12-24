@@ -26,16 +26,27 @@ All changes between releases are tracked here.
 - Toolchanger Elastic Lock Actuator was redesigned for ease of assembly. Using a V1 lock will still work though
 
 The following parts *must* be reprinted since Release 1.0.0:
-- [Front Left Bed Coupling Side Plate]
-- [Front Right Bed Coupling Side Plate]
-- [Front Left Z Motor Plate]
-- [Front Right Z Motor Plate]
-- [Back Z Motor Plate]
+- [Front Left Bed Coupling Lift](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/front_left_bed_coupling_lift.STL)
+- [Front Right Bed Coupling Lift](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/front_right_bed_coupling_lift.STL)
+- [Front Left Z Motor Plate](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/front_left_z_motor_plate.STL)
+- [Front Right Z Motor Plate](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/front_right_z_motor_plate.STL)
+- [Back Z Motor Plate](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/back_z_motor_plate.STL)
+- [Carriage Coupler Plate](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_coupler_plate.STL)
 
 The following parts have minor changes, but do not need to be reprinted:
-- [Front Left Double Pulley Corner Bracket]
-- [Front Right Double Pulley Corner Bracket]
+- [Left Motor Corner Bracket Spacer](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/left_motor_corner_bracket_spacer.STL)
+- [Right Motor Corner Bracket Spacer](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/right_motor_corner_bracket_spacer.STL)
 
+- [Left Double Pulley Corner Bracket](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/left_double_pulley_corner_bracket.STL)
+- [Right Double Pulley Corner Bracket](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/right_double_pulley_corner_bracket.STL)
+- [Front Left Leadscrew Retainer](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/front_left_leadscrew_retainer.STL)
+- [Front Right Leadscrew Retainer](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/front_right_leadscrew_retainer.STL)
+- [Back Leadscrew Retainer](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/back_leadscrew_retainer.STL)
+- [Back Bed Coupling Lift](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/back_bed_coupling_lift.STL)
+- [Front Left Foot](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/front_left_foot.STL)
+- [Front Right Foot](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/front_right_foot.STL)
+- [Back Left Foot](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/back_left_foot.STL)
+- [Back Right Foot](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/back_right_foot.STL)
 
 ### Removed
 - Delrin Slip Face on toolchanger elastic lock
