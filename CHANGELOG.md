@@ -3,11 +3,11 @@
 All changes between releases are tracked here.
 
 
-## [PENDING] - 2017-12-23
+## [PENDING] - 2017-12-24
 
 ### Added
 - Jubilee V2, *Cubilee*
-- New [Bill of Materials]()
+- New [Bill of Materials](https://docs.google.com/spreadsheets/d/1pRzBQxVzL9c4T9b1RrKvSjlSwJJhJ7NcbSV6iJUv0X0/edit?usp=sharing)
 
 ### Changed
 - Frame was adjusted to accommodate larger tools and a build volume of 300x300x300mm
@@ -26,15 +26,15 @@ All changes between releases are tracked here.
 - Toolchanger Elastic Lock Actuator was redesigned for ease of assembly. Using a V1 lock will still work though
 
 The following parts *must* be reprinted since Release 1.0.0:
-- [Front Left Bed Coupling Side Plate]()
-- [Front Right Bed Coupling Side Plate]()
-- [Front Left Z Motor Plate]()
-- [Front Right Z Motor Plate]()
-- [Back Z Motor Plate]()
+- [Front Left Bed Coupling Side Plate]
+- [Front Right Bed Coupling Side Plate]
+- [Front Left Z Motor Plate]
+- [Front Right Z Motor Plate]
+- [Back Z Motor Plate]
 
 The following parts have minor changes, but do not need to be reprinted:
-- [Front Left Double Pulley Corner Bracket]()
-- [Front Right Double Pulley Corner Bracket]()
+- [Front Left Double Pulley Corner Bracket]
+- [Front Right Double Pulley Corner Bracket]
 
 
 ### Removed
