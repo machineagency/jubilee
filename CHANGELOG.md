@@ -36,7 +36,6 @@ The following parts *must* be reprinted since Release 1.0.0:
 The following parts have minor changes, but do not need to be reprinted:
 - [Left Motor Corner Bracket Spacer](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/left_motor_corner_bracket_spacer.STL)
 - [Right Motor Corner Bracket Spacer](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/right_motor_corner_bracket_spacer.STL)
-
 - [Left Double Pulley Corner Bracket](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/left_double_pulley_corner_bracket.STL)
 - [Right Double Pulley Corner Bracket](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/right_double_pulley_corner_bracket.STL)
 - [Front Left Leadscrew Retainer](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/3d_printed_parts/frame/front_left_leadscrew_retainer.STL)
