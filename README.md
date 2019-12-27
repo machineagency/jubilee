@@ -1,3 +1,5 @@
+**Update:** Jubilee is about to undergo a major release in early January! To get a sense of V2 before it's fully released, have a look at the [upcoming release branch](https://github.com/machineagency/jubilee/tree/dev/jubilee_2.0) and new [V2 Bill of Materials](https://docs.google.com/spreadsheets/d/1pRzBQxVzL9c4T9b1RrKvSjlSwJJhJ7NcbSV6iJUv0X0/edit#gid=0). Finally, to get a sense of what's different between V2 and V1, have a look at the [Changelog](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/CHANGELOG.md).
+
 Jubilee
 =======
 
