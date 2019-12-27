@@ -1,11 +1,9 @@
-**Update:** Jubilee is about to undergo a major release in early January! To get a sense of V2 before it's fully released, have a look at the [upcoming release branch](https://github.com/machineagency/jubilee/tree/dev/jubilee_2.0) and new [V2 Bill of Materials](https://docs.google.com/spreadsheets/d/1pRzBQxVzL9c4T9b1RrKvSjlSwJJhJ7NcbSV6iJUv0X0/edit#gid=0). Finally, to get a sense of what's different between V2 and V1, have a look at the [Changelog](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/CHANGELOG.md).
-
-Jubilee
+Jubilee V2
 =======
 
 Jubilee is an open-source, extensible multi-tool motion platform capable of running GCode for non-loadbearing automation applications.
 
-![Jubilee](/pics/jubilee-professional-headshot-brightened.jpg)
+![Jubilee](/pics/jubilee_v2.png)
 
 Out-of-the-box, Jubilee is configured for multimaterial 3D printing and multicolor pen plotting, but we've had success with light liquid-handling and image stitching applications too.
 
@@ -46,7 +44,7 @@ Read more about the history of Jubilee on [Hackaday](https://hackaday.com/2019/1
 Jubilee is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License][cc-by] (CC BY-SA 3.0).
 [![CC BY 3.0][cc-by-image]][cc-by]
 
-[bom]: https://docs.google.com/spreadsheets/d/1gq5yLxlfPtb3yrGsuXR_ZLhAFGB77CzGvfcWYyYIvT4/edit#gid=0
+[bom]: https://docs.google.com/spreadsheets/d/1pRzBQxVzL9c4T9b1RrKvSjlSwJJhJ7NcbSV6iJUv0X0/edit#gid=0
 [cc-by]: https://creativecommons.org/licenses/by-sa/3.0/
 [cc-by-image]: https://i.creativecommons.org/l/by-sa/3.0/88x31.png
 [discord]: https://discord.gg/XkphRqb
