@@ -14,14 +14,15 @@ All changes between releases are tracked here.
 - Dowel pin spacing on the Coupling Plate was modified slightly to more easily lock E3D tool plates
 - Back Panel bolt hole pattern now accommodates either a set of Duet2 + Duex5 boards or a set of Duet3 + 2 expansion boards + Raspi 
 - Front opening has more clearance for bed plate removal 
-- ZYLTech Leadscrews are now 375mm long
+- ZYLTech Leadscrews are now 375mm instead of 270mm
 - Side Panel Sizes are slightly larger
 - Back Panel Size is slightly larger
 - Crossbar Size is slightly longer. New [DXF](https://github.com/machineagency/jubilee/blob/dev/jubilee_2.0/fabrication_exports/machined_parts/crossbar/crossbar_6mm_for_400mm_mgn12_rail.DXF)
 - Belt lengths are now slightly longer
-- X-axis MGN12 rail
-- Z-axis MGN12 rail
+- X-axis MGN12 rail is now 400mm instead of 350mm
+- Z-axis MGN12 rail is now 400mm instead of 300mm
 - 3D Printed Feet are now easier to assemble and ~$30 cheaper
+- Mounting plates for Z axis motors are now one piece each instead of two.
 - All M2 Dowel Pins were replaced with set screws for easier assembly.
 - Toolchanger Elastic Lock Actuator was redesigned for ease of assembly. Using a V1 lock will still work though
 - The BOM lists the embedded magnet build plate as the default since it fixes issue [#3](https://github.com/machineagency/jubilee/issues/3)
