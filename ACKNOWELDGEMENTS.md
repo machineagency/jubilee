@@ -20,7 +20,7 @@ Jubilee is made possible through monetary support and donations from
 * Tony Lock of the Duet3D Project
 
 ## Beta Testing Acknowledgements
-* @Danal on Discord for early design feedback and identifying early stage buts
+* @Danal on Discord for early design feedback and identifying early stage bugs
 
 ## BOM Acknoweldgements
 * @ImpC on Discord for BOM alternatives to cut costs
