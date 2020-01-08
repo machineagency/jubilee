@@ -1,6 +1,6 @@
 Jubilee was built to encapsulate all the best practices in hobbyist 3D printing machine design at the time.
 As a result, it's a machine that takes inspiration from many many places.
-Here's the full list of referenced projects and contributors
+Here's the (growing!) list of referenced projects and contributors
 
 ## Design Acknowledgments
 * Nadya Peek of Machine Agency
@@ -12,6 +12,15 @@ Here's the full list of referenced projects and contributors
 * J Steve White and Tony Akens of the [Railcore](https://railcore.org/) Project
   * for an incredibly well-documented BOM, an example of 3-point bed leveling firmware configs, a great example of community engagement, and openness in sharing and answering questions
 
+## Manufacturing and Supplier Acknowledgements
+* Matthew White at 713Maker
+  * for supporting the Jubilee builder community with custom machined parts and developing the original magnetic bed plate
+* Steve Wygant of SeeMeCNC
+  * for supporting the Jubilee builder community with a generous variety of Jubilee's laser-cut and machined parts.
+* Luke at Luke's Laboratory
+  * for kit-izing various elements of the project, making them cheaper for Jubilee builders
+* Rebecca and Jason of LDO Motors
+  * for supplying custom motor options for the toolchanger elastic lock design
 
 ## Grants and Donations
 Jubilee is made possible through monetary support and donations from
@@ -19,7 +28,8 @@ Jubilee is made possible through monetary support and donations from
 * The E3D Team
 * Tony Lock of the Duet3D Project
 
-## Beta Testing Acknowledgements
+## Beta Testing and Design Feedback Acknowledgements
+* Andrew Waer for a pilot build with assembly feedback and research into trade-offs regarding various documentation styles
 * @Danal on Discord for early design feedback and identifying early stage bugs
 
 ## BOM Acknoweldgements
