@@ -32,5 +32,6 @@ Jubilee is made possible through monetary support and donations from
 * Andrew Waer for a pilot build with assembly feedback and research into trade-offs regarding various documentation styles
 * @Danal on Discord for early design feedback and identifying early stage bugs
 
-## BOM Acknoweldgements
+## BOM and Documentation Acknoweldgements
 * @ImpC on Discord for BOM alternatives to cut costs
+* @VinnyCordeiro on Discord for contributing a massive list of laser cutting services to the wiki
