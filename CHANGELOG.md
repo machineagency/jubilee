@@ -2,8 +2,17 @@
 
 All changes between releases are tracked here.
 
+## [PENDING] rel/jubilee_2.0.1 - Jan 19, 2020
 
-## [PENDING] - 2017-12-24
+- Adjusted the Carriage Back Plate and pulley spacers such that the nominal position of both belts is coplanar, rather than slightly off.
+- swapped M3 nuts and for heat set inserts int the Carriage Back Plate to add clearance for the aluminum crossbar upgrade.
+
+The following parts *must* be reprinted since Release 1.0.0:
+- [Carriage Coupler Plate]
+- [Belt Clasp]
+- [Printed Pulley Spacer]
+
+## rel/jubilee-2.0 - Jan 15, 2020
 
 ### Added
 - Jubilee V2, *Cubilee*
