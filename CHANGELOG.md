@@ -8,9 +8,9 @@ All changes between releases are tracked here.
 - swapped M3 nuts and for heat set inserts int the Carriage Back Plate to add clearance for the aluminum crossbar upgrade.
 
 The following parts *must* be reprinted since Release 1.0.0:
-- [Carriage Coupler Plate]
-- [Belt Clasp]
-- [Printed Pulley Spacer]
+- [Carriage Back Plate](https://github.com/machineagency/jubilee/blob/master/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_back_plate.STL)
+- [Belt Clasp](https://github.com/machineagency/jubilee/blob/master/fabrication_exports/3d_printed_parts/frame/belt_clasp.STL)
+- [Printed Pulley Spacer](https://github.com/machineagency/jubilee/blob/master/fabrication_exports/3d_printed_parts/frame/printed_pulley_spacer.STL)
 
 ## rel/jubilee-2.0 - Jan 15, 2020
 
