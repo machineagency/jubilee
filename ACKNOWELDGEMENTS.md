@@ -35,3 +35,4 @@ Jubilee is made possible through monetary support and donations from
 ## BOM and Documentation Acknoweldgements
 * @ImpC on Discord for BOM alternatives to cut costs
 * @VinnyCordeiro on Discord for contributing a massive list of laser cutting services to the wiki
+* @MiasmicTruth on Discord for clarification on the crossbar assembly instructions
