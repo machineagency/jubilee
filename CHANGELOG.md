@@ -2,10 +2,12 @@
 
 All changes between releases are tracked here.
 
-## [PENDING] rel/jubilee_2.0.1 - Jan 19, 2020
+## [PENDING] rel/jubilee_2.0.1 - Jan 19, 2020 (already in master branch)
 
-- Adjusted the Carriage Back Plate and pulley spacers such that the nominal position of both belts is coplanar, rather than slightly off.
+- Adjusted the Carriage Back Plate and pulley spacers such that the nominal position of both belts is coplanar, rather than slightly off. Fixes [Issue #14](https://github.com/machineagency/jubilee/issues/14).
 - swapped M3 nuts and for heat set inserts int the Carriage Back Plate to add clearance for the aluminum crossbar upgrade.
+- Updated the instructions to show how to properly install the composite _Keep Nuts_ into the carbon fiber crossbar. Fixes [Issue #15](https://github.com/machineagency/jubilee/issues/15).
+
 
 The following parts *must* be reprinted since Release 1.0.0:
 - [Carriage Back Plate](https://github.com/machineagency/jubilee/blob/master/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_back_plate.STL)
