@@ -17,9 +17,9 @@ Then head over to the [**Wiki**](https://github.com/machineagency/jubilee/wiki) 
 
 ## Repository Contents
 The Repository is broken into threee main chunks:
-* **[/frame]** contains all design content related to the Jubilee frame
-* **[/tools]** contains all design content related to custom tools and tools to help assemble and tune Jubilee
-* **[/software](/software)** holds both the Duet config files and profile settings for common slicer packages
+* **frame** contains all design content related to the Jubilee frame
+* **tools** contains all design content related to custom tools and tools to help assemble and tune Jubilee
+* **software** holds both the Duet config files and profile settings for common slicer packages
 
 inside these folders, you'll usually find a folder structure that looks like this:
 * **assembly\_instructions** contains PDFs to take you step-by-step through sub-assemblies of the project.
