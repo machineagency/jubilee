@@ -3,16 +3,20 @@
 All changes between releases are tracked here.
 
 ## [PENDING] rel/jubilee_2.0.1 - Jan 19, 2020 (already in master branch)
-
+### Major Fixes
 - Adjusted the Carriage Back Plate and pulley spacers such that the nominal position of both belts is coplanar, rather than slightly off. Fixes [Issue #14](https://github.com/machineagency/jubilee/issues/14).
 - swapped M3 nuts and for heat set inserts int the Carriage Back Plate to add clearance for the aluminum crossbar upgrade.
 - Updated the instructions to show how to properly install the composite _Keep Nuts_ into the carbon fiber crossbar. Fixes [Issue #15](https://github.com/machineagency/jubilee/issues/15).
-
+- Re-exported latest STL files for Extruder Tool
 
 The following parts *must* be reprinted since Release 1.0.0:
 - [Carriage Back Plate](https://github.com/machineagency/jubilee/blob/master/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_back_plate.STL)
 - [Belt Clasp](https://github.com/machineagency/jubilee/blob/master/fabrication_exports/3d_printed_parts/frame/belt_clasp.STL)
 - [Printed Pulley Spacer](https://github.com/machineagency/jubilee/blob/master/fabrication_exports/3d_printed_parts/frame/printed_pulley_spacer.STL)
+
+### Minor Fixes
+- Fixed old V1-related graphics in Remote Elastic Lock Instructions. Some photos are still out of date, but the whole is useable in its current state.
+- Reorganized file structure to clearly separate tools from frame
 
 ## rel/jubilee-2.0 - Jan 15, 2020
 
