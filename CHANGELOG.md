@@ -8,6 +8,8 @@ All changes between releases are tracked here.
 - swapped M3 nuts and for heat set inserts int the Carriage Back Plate to add clearance for the aluminum crossbar upgrade.
 - Updated the instructions to show how to properly install the composite _Keep Nuts_ into the carbon fiber crossbar. Fixes [Issue #15](https://github.com/machineagency/jubilee/issues/15).
 - Re-exported latest STL files for Extruder Tool
+- Added an "Upgrades" folder for alternate frame components
+- Tweaked direct drive extruder to fix compatibility issue when assembling for a V6 hotend.
 
 The following parts *must* be reprinted since Release 1.0.0:
 - [Carriage Back Plate](https://github.com/machineagency/jubilee/blob/master/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_back_plate.STL)
