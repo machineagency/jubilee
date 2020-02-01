@@ -17,6 +17,8 @@ Here's the (growing!) list of referenced projects and contributors
   * for supporting the Jubilee builder community with custom machined parts and developing the original magnetic bed plate
 * Steve Wygant of SeeMeCNC
   * for supporting the Jubilee builder community with a generous variety of Jubilee's laser-cut and machined parts.
+* Wade Wendorf at Mandala Rose Works
+  * for supporting the Jubilee builder community with custom machined upgrade parts of various types
 * Luke at Luke's Laboratory
   * for kit-izing various elements of the project, making them cheaper for Jubilee builders
 * Rebecca and Jason of LDO Motors
@@ -29,10 +31,14 @@ Jubilee is made possible through monetary support and donations from
 * Tony Lock of the Duet3D Project
 
 ## Beta Testing and Design Feedback Acknowledgements
-* Andrew Waer for a pilot build with assembly feedback and research into trade-offs regarding various documentation styles
+* Andrew Waer for an early V1 build with assembly feedback and research into trade-offs regarding various documentation styles
+* Cindy Feng for an early V2 build with extensive feedback
+* Kellie Dunn for an early V2 build with extensive feedback
 * @Danal on Discord for early design feedback and identifying early stage bugs
 
 ## BOM and Documentation Acknoweldgements
 * @ImpC on Discord for BOM alternatives to cut costs
 * @VinnyCordeiro on Discord for contributing a massive list of laser cutting services to the wiki
-* @MiasmicTruth on Discord for clarification on the crossbar assembly instructions
+* @MiasmicTruth on Discord for live assembly videos and continuous assembly instruction feedback
+* @Bryan H. on Discord for part numbering scheme suggestions and printed part fabrication suggestions
+* @Enza3D on Discord for part numbering scheme suggestions 
