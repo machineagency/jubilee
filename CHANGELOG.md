@@ -10,6 +10,7 @@ All changes between releases are tracked here.
 - Re-exported latest STL files for Extruder Tool
 - Added an "Upgrades" folder for alternate frame components
 - Tweaked direct drive extruder to fix compatibility issue when assembling for a V6 hotend.
+- Adding Heatsinks to default extruder BOM for the stepper motors as they can get hot enough to warp the tool plates
 
 The following parts *must* be reprinted since Release 1.0.0:
 - [Carriage Back Plate](https://github.com/machineagency/jubilee/blob/master/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_back_plate.STL)
