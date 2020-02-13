@@ -46,19 +46,21 @@ M671 X300:5:152.5 Y354:354:24 S10 ; Front Left: (300, 354) | Front Right: (5, 35
 
 
 ; Axis and motor configuration
-M350 X16 Y16 Z16 E16 U4 I1              ; Set 16x microstepping for xyz axes & extruder, 4x for toolchanger lock. Use interpolation.
+;M350 X16 Y16 Z16 E16 U4 I1              ; Set 16x microstepping for xyz axes & extruder, 4x for toolchanger lock. Use interpolation.
+M350 X8 Y8 Z16 E16 U4 I1              ; Set 8x microstepping for xy, 16x for z axes & extruder, 4x for toolchanger lock. Use interpolation.
 M574 X1 Y1 Z1 S1                        ; Set homing switch configuration x low-end, y low-end, z low-end, all active-high (NC)
 M574 U1 S1                              ; Set homing switch configuration for toolchange lock. Both switches should be wired NC and in series.
-M906 X1900 Y1900 Z1600 E1250            ; Motor currents (mA)
-M906 U670 I70                           ; LDO Toolchanger Elastic Lock Motor current and idle motor percentage.
-;M906 U900 I60                           ; StepperOnline Toolchanger Elastic Lock Motor current and idle motor percentage
-M201 X1500 Y1500 Z20 E1300 U1000        ; Accelerations (mm/s^2)
-M203 X30000 Y30000 Z800 E8000 U10000    ; Maximum speeds (mm/min)
-M566 X1400 Y1400 Z2 E3000 U200          ; Maximum jerk speeds mm/minute
-M92 X200 Y200                           ; Steps/mm for X,Y
+M906 X1950 Y1950 Z1600 E1250            ; Motor currents (mA)
+;M906 U670 I60                           ; LDO Toolchanger Elastic Lock Motor current and idle motor percentage. Do not lower idle current.
+M906 U900 I60                           ; StepperOnline Toolchanger Elastic Lock Motor current and idle motor percentage. Do not lower idle current.
+M201 X1000 Y1000 Z20 E1300 U1000        ; Accelerations (mm/s^2)
+M203 X13000 Y13000 Z800 E8000 U10000    ; Maximum speeds (mm/min). Conservative to ensure steps aren't lost when carrying tools.
+M566 X1000 Y1000 Z2 E3000 U200          ; Maximum jerk speeds mm/minute
+;M92 X200 Y200                           ; Steps/mm for X,Y
+M92 X100 Y100
 M92 U30.578                             ; Steps/deg for U from (200 * 4 * 13.76)/360
 M92 Z3200                               ; Steps/mm for Z for a 2mm pitch leadscrew, 0.9mm stepper. (16 * 400)/2
-M92 E837                                ; Extruder - 0.9 deg/step
+M92 E830                                ; Extruder - 0.9 deg/step
 
 ; Set axis software limits and min/max switch-triggering positions.
 ; Adjusted such that (0,0) lies at the lower left corner of a 300x300mm square in the 305mmx305mm build plate.
@@ -66,35 +68,34 @@ M208 X-16.5:317 Y-0:385 Z-0.2:315
 M208 U0:200                                 ; Set Elastic Lock (U axis) max rotation angle
 
 ; Thermistors
-M305 P0 S"Bed" T100000 B3950 R4700 H0 L0    ; Bed Thermistor values. H and L are correction values.
+M305 P0 S"Bed" T10000 B3435 H0                ; adjusted thermistor value after testing with an IR thermometer.
+;M305 P0 S"Bed" T10000 B3984 H0 L160          ; BOM-specified Terminal Lug Thermistor values.
+;M305 P0 S"Bed" T100000 B3950 R4700 H0 L0    ; Built-in Keenovo Bed Thermistor values.
 M305 P1 X200                                ; Map Extruder 0 sensor to PT100 Channel 0
 M305 P2 X201                                ; Map Extruder 1 sensor to PT100 Channel 1
 
 ;Heaters
 M570 S30                                    ; Print will be terminated if a heater fault is not reset within 30 minutes.
 M143 H0 S100                                ; Maximum H0 (Bed) heater temperature
-M143 H1 S260                                ; Maximum H1 (Extruder) heater temperature
-M143 H2 S260
-;M140 S-273 R-273                           ; Standby and initial Temp for bed as "off" (-273 = "off")
+;M143 H1 S260                                ; Maximum H1 (Extruder) heater temperature
 
 ; Default heater model
 M307 H0 A270.7 C90.4 D6.7 B0 S1.0           ; Default Bed Heater Parameters, before tuning / if config-override.g is missing
-;M307 H1 A508.1 C249.0 D3.8 S1.00 V24.2 B0  ; Default Tool Heater Parameters, before tuning / if config-override.g is missing
 
 ; Tool definitions
 M563 P0 S"Extruder 0" D0 H1 F0          ; Define tool 0
-G10 P0 Z-1.45                           ; Set tool 0 offset from the bed
+G10 P0 Z-2.8                            ; Set tool 0 offset from the bed. These will be different for everyone.
 G10 P0 S190 R170                        ; Set tool 0 operating and standby temperatures(-273 = "off")
-M572 D0 S0.1				            ; Set pressure advance on Extruder Drive 0
+M572 D0 S0.1				; Set pressure advance on Extruder Drive 0
 
 M563 P1 S"Extruder 1" D1 H2 F2          ; Define tool 1
-G10 P1 X0.4 Y-0.08 Z-2.1                ; Set tool 1 offset from the bed with tool-0 as a reference.
+G10 P1 X1.52 Y0.36 Z-2.45                ; Set tool 1 offset from the bed with tool-0 as a reference. These will be different for everyone.
 G10 P1 S190 R170                        ; Set tool 1 operating and standby temperatures(-273 = "off")
 M572 D1 S0.1                            ; Set pressure advance on Extruder Drive 1
 
 ; Fans
 M106 P0 S0                               ; Turn off fan 0
-M106 P1 S0                               ; Turn off fan 1
+;M106 P1 S0                               ; Turn off fan 1
 
 ; Z probing settings
 M558 P4 C2 H5 A1 T10000  S0.02
