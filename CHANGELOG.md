@@ -13,9 +13,9 @@ All changes between releases are tracked here.
 - Adding Heatsinks to default extruder BOM for the stepper motors as they can get hot enough to warp the tool plates
 
 The following parts *must* be reprinted since Release 1.0.0:
-- [Carriage Back Plate](https://github.com/machineagency/jubilee/blob/master/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_back_plate.STL)
-- [Belt Clasp](https://github.com/machineagency/jubilee/blob/master/fabrication_exports/3d_printed_parts/frame/belt_clasp.STL)
-- [Printed Pulley Spacer](https://github.com/machineagency/jubilee/blob/master/fabrication_exports/3d_printed_parts/frame/printed_pulley_spacer.STL)
+- [Carriage Back Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_back_plate.STL)
+- [Belt Clasp](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/belt_clasp.STL)
+- [Printed Pulley Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/printed_pulley_spacer.STL)
 
 The following parts were tweaked, but do not need to be reprinted if you have already assembled your machine.
 - [Left Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/left_motor_corner_bracket_spacer.STL)
