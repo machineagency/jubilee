@@ -17,11 +17,16 @@ The following parts *must* be reprinted since Release 1.0.0:
 - [Belt Clasp](https://github.com/machineagency/jubilee/blob/master/fabrication_exports/3d_printed_parts/frame/belt_clasp.STL)
 - [Printed Pulley Spacer](https://github.com/machineagency/jubilee/blob/master/fabrication_exports/3d_printed_parts/frame/printed_pulley_spacer.STL)
 
+The following parts were tweaked, but do not need to be reprinted if you have already assembled your machine.
+- [Left Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/left_motor_corner_bracket_spacer.STL)
+- [Right Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_motor_corner_bracket_spacer.STL)
+
 ### Minor Fixes/Tweaks
 - Most printed parts now have part numbers with the revision id on them. This feature is useful for identifying what version of a part you have to decide whether you need to upgrade to a newer revision in the future
 - Fixed old V1-related graphics in Remote Elastic Lock Instructions. Some photos are still out of date, but the whole is useable in its current state.
 - Reorganized file structure to clearly separate tools from frame
 - M3 Drop-in T nuts have been replaced with M3 Slide-in T nuts, which are cheaper and less of a hassle to install.
+- Y axis limit switch was moved forward by 0.2mm to ensure that it clicks even on poorly printed parts.
 
 ## rel/jubilee-2.0 - Jan 15, 2020
 
