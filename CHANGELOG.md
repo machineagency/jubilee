@@ -21,6 +21,7 @@ The following parts *must* be reprinted since Release 1.0.0:
 - Most printed parts now have part numbers with the revision id on them. This feature is useful for identifying what version of a part you have to decide whether you need to upgrade to a newer revision in the future
 - Fixed old V1-related graphics in Remote Elastic Lock Instructions. Some photos are still out of date, but the whole is useable in its current state.
 - Reorganized file structure to clearly separate tools from frame
+- M3 Drop-in T nuts have been replaced with M3 Slide-in T nuts, which are cheaper and less of a hassle to install.
 
 ## rel/jubilee-2.0 - Jan 15, 2020
 
