@@ -5,7 +5,7 @@ All changes between releases are tracked here.
 ## [PENDING] rel/jubilee_2.0.1 - Feb 10, 2020 (already in master branch)
 
 ### Upgrades
-The [Aluminum Crossbar Upgrade](https://www.mandalaroseworks.com/jubilee/crossbar) is now available from Mandala Rose Works for $80. In addition you will need to:
+The [Aluminum Crossbar Upgrade](https://www.mandalaroseworks.com/jubilee/crossbar) is now available from Mandala Rose Works for $80. Should you choose this upgrade path, you will also need to:
 
 - Print the latest [Right Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_motor_corner_bracket_spacer.STL)
 - Print the [X Limit Trigger](https://github.com/machineagency/jubilee/blob/master/frame/upgrades/aluminum_crossbar/fabrication_exports/stls/x_limit_trigger.STL)
