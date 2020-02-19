@@ -13,7 +13,7 @@ The [Aluminum Crossbar Upgrade](https://www.mandalaroseworks.com/jubilee/crossba
     - 1x M3, 10mm standoff from [McMaster-Carr](https://www.mcmaster.com/95947a006)
     - 1x M3, 16mm buttonhead screw from [McMaster-Carr](https://www.mcmaster.com/92095a184) or [Bolt Depot](https://www.boltdepot.com/Product-Details.aspx?product=7222)
     - 1x D2HW-BL201H from [Digikey](https://www.digikey.com/products/en?keywords=D2HW-BL201H)
-    - Optional: replace the sixteen M3, https://www.digikey.com/products/en?keywords=D2HW-BL201H)12mm buttonhead screws for bolting in the rail with M3, 8mm screws instead
+    - Optional: replace the sixteen M3, 12mm buttonhead screws for bolting in the rail with M3, 8mm screws instead
 
 ### Major Fixes
 - Adjusted Parking Post for the default extruder such that the tool doesn't twist while being picked up.
