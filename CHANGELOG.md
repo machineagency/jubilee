@@ -3,6 +3,18 @@
 All changes between releases are tracked here.
 
 ## [PENDING] rel/jubilee_2.0.1 - Feb 10, 2020 (already in master branch)
+
+### Upgrades
+The [Aluminum Crossbar Upgrade](https://www.mandalaroseworks.com/jubilee/crossbar) is now available from Mandala Rose Works for $80. Should you choose this upgrade path, you will also need to:
+
+- Print the latest [Right Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_motor_corner_bracket_spacer.STL)
+- Print the [X Limit Trigger](https://github.com/machineagency/jubilee/blob/master/frame/upgrades/aluminum_crossbar/fabrication_exports/stls/x_limit_trigger.STL)
+- purchase the following vitamins
+    - 1x M3, 10mm standoff from [McMaster-Carr](https://www.mcmaster.com/95947a006)
+    - 1x M3, 16mm buttonhead screw from [McMaster-Carr](https://www.mcmaster.com/92095a184) or [Bolt Depot](https://www.boltdepot.com/Product-Details.aspx?product=7222)
+    - 1x D2HW-BL201H from [Digikey](https://www.digikey.com/products/en?keywords=D2HW-BL201H)
+    - Optional: replace the sixteen M3, 12mm buttonhead screws for bolting in the rail with M3, 8mm screws instead
+
 ### Major Fixes
 - Adjusted Parking Post for the default extruder such that the tool doesn't twist while being picked up.
 - Adjusted the Carriage Back Plate and pulley spacers such that the nominal position of both belts is coplanar, rather than slightly off. Fixes [Issue #14](https://github.com/machineagency/jubilee/issues/14).
