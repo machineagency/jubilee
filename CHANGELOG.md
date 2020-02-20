@@ -16,7 +16,7 @@ The [Aluminum Crossbar Upgrade](https://www.mandalaroseworks.com/jubilee/crossba
     - Optional: replace the sixteen M3, 12mm buttonhead screws for bolting in the rail with M3, 8mm screws instead
 
 ### Major Fixes
-- Adjusted Parking Post for the default extruder such that the tool doesn't twist while being picked up.
+- Adjusted Parking Post for the default extruder such that the tool doesn't twist while being picked up. Updated [assembly instructions](https://github.com/machineagency/jubilee/blob/master/tools/jubilee_tools/tool_posts/configurable_tool_post/assembly_instructions/parking_post_assembly_instructions.pdf)
 - Adjusted the Carriage Back Plate and pulley spacers such that the nominal position of both belts is coplanar, rather than slightly off. Fixes [Issue #14](https://github.com/machineagency/jubilee/issues/14).
 - swapped M3 nuts and for heat set inserts int the Carriage Back Plate to add clearance for the aluminum crossbar upgrade.
 - Updated the instructions to show how to properly install the composite _Keep Nuts_ into the carbon fiber crossbar. Fixes [Issue #15](https://github.com/machineagency/jubilee/issues/15).
@@ -29,8 +29,8 @@ The following parts *must* be reprinted since Release 1.0.0:
 - [Carriage Back Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_back_plate.STL)
 - [Belt Clasp](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/belt_clasp.STL)
 - [Printed Pulley Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/printed_pulley_spacer.STL)
-- [Parking Post Base]
-- [Tool Holder]
+- [Parking Post Base](https://github.com/machineagency/jubilee/blob/master/tools/jubilee_tools/tool_posts/configurable_tool_post/fabrication_exports/parking_post_base_47mm.STL)
+- [Tool Holder](https://github.com/machineagency/jubilee/blob/master/tools/jubilee_tools/tool_posts/configurable_tool_post/fabrication_exports/tool_holder_47mm.STL)
 
 The following parts were tweaked, but do not need to be reprinted if you have already assembled your machine.
 - [Left Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/left_motor_corner_bracket_spacer.STL) has a bumper feature to make the y rails easier to install in a consistent spot.
