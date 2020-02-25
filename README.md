@@ -7,7 +7,18 @@ Jubilee is an open-source, extensible multi-tool motion platform capable of runn
 
 Out-of-the-box, Jubilee is configured for multimaterial 3D printing and multicolor pen plotting, but we've had success with light liquid-handling and image stitching applications too.
 
-While this repository contains all the design-related content needed to build a Jubilee, we suggest using the [**Wiki**](https://github.com/machineagency/jubilee/wiki) to help navigate through these files.
+While this repository contains all the design-related content needed to build a Jubilee, we suggest using the [**Wiki**](https://github.com/machineagency/jubilee/wiki) to navigate through this "file soup."
+
+## Top-Level Specs
+* Automatic Toolchanging compatible with E3D tool plates
+* CoreXY Motion System
+* 300x300x300 build volume.
+* 409mm of horizontal tool rack space
+* kinematically coupled bed plate
+* autotramming with 3-point bed-leveling
+* ~$1540 for a single unit, not including tools. See the [BOM][bom] for the part breakdown
+* User Extensible! We encourage extending the design to custom applications via custom tools and bed plates
+* Full specs listed on [this wiki page](https://github.com/machineagency/jubilee/wiki/Feature-Breakdown)
 
 ## Build your own Jubilee
 
@@ -16,7 +27,7 @@ The best way to get started is to thumb through the [**Assembly Instructions**](
 Then head over to the [**Wiki**](https://github.com/machineagency/jubilee/wiki) to start gathering tools and deciding which parts to buy and which parts to make.
 
 ## Repository Contents
-The Repository is broken into threee main chunks:
+The Repository is broken into three main chunks:
 * **frame** contains all design content related to the Jubilee frame
 * **tools** contains all design content related to custom tools and tools to help assemble and tune Jubilee
 * **software** holds both the Duet config files and profile settings for common slicer packages
