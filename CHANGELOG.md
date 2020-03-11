@@ -2,7 +2,7 @@
 
 All changes between releases are tracked here.
 
-## [PENDING] rel/jubilee_2.0.1 - Feb 28, 2020 (already in master branch)
+## rel/jubilee_2.0.1 - Mar 10, 2020
 
 ### Major Fixes/Updates from 2.0
 - The [Aluminum Crossbar](https://www.mandalaroseworks.com/jubilee/crossbar) is now available from Mandala Rose Works for $80. It is now the default in the BOM. Should you choose to upgrade from the carbon fiber crossbar, you will need to:
