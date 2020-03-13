@@ -2,6 +2,56 @@
 
 All changes between releases are tracked here.
 
+## (UPCOMING) rel/jubilee_2.0.2 (in development now)
+
+### Major Fixes/Updates from Jubilee 2.0.1
+- [x] The frame is now Gates Pulley Compatible.
+    - Either Genuine Gates pulleys or generic pulleys can be dropped into the machine. Note that Gates Pulleys are slightly taller, so shims and washers have been called out in the instructions to handle the height differences. Several printed parts have been adjusted, and they are called out below.
+- [x] All Delrin Corner Plates are now 3D printed except the Motor Plates. (You can still use the laser-cut ones, but you may need to add shim.)
+    - This is to to handle intercompatibility with Gates/Generic pulleys. The Gates pulleys require taller shoulder screws, so I've opted for thickening these parts instead of adding shim.
+- [ ] Metal Motor Plates now have a counterbore feature on both motor plates
+    - Both Motor Plates now have a counterbore feature to accommodate the thicker motor spacer. This change was driven by the geometry changes to make the Gates pulleys a drop-in replacement.
+- [ ] CAD model now displays the aluminum crossbar instead of the 6mm carbon fiber one.
+    - If you need to reference the carbon fiber crossbar, it is stored in a Solidworks configuration in the top level assembly.
+- [ ] All three printed components that couple the bed to the frame have heat-set inserts
+    - The springs now connect to this part with a solder terminal lug, just like how they are connected to the bed. This change makes these parts much easier to assemble.
+- [ ] Instructions have been updated for the bed plate, right motor corner plate (and upgrade), Z axis assembly, and heat set insert list
+
+### Shopping List Changes
+- [ ] The 2.0.1 Y axis limit switch (Part Num: D2HW-BL201H) has been reverted to the original switch from 2.0 (Part Num: D2HW-C201H).
+    - The original Right Motor Plate Spacer was too short to fully embed the Y axis switch, but resizing for the Gates pulley option added enough space to add the original switch in. Overall, reducing the unique part count makes the project easier to order and assemble.
+- [ ] Bed Retension Springs are now a stock part from AliExpress
+    - 2.0.1 (and before) had instructions for making your own springs out of spring stock. This is a TON of extra work for a part you can just buy.
+- [ ] Bed Retension Clips are now a different type of Terminal Lug
+    - The Keystone 7328 Terminal Lugs have been replaced by 4000 Terminal Lugs, which are much easier to bend around the spring. You will need 6 of them.
+- [ ] 3 more M3 heat set inserts
+
+### Updating from 2.0.1 to 2.0.2
+If you would like to have the future option of updating to genuine Gates pulleys, the following part **must** be reprinted
+- 4x [Printed Pulley Spacer]
+- [Right Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_motor_corner_bracket_spacer.STL) RMS-04
+- [Right Motor Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_motor_plate.STL) RMP-04
+- [Carriage Back Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_back_plate.STL) CBP-03
+- [Left Crossbar Pulley Reinforcement Plate]
+- [Right Crossbar Pulley Reinforcement Plate]
+- [Left Corner Pulley Reinforcement Plate]
+- [Right Corner Pulley Reinforcement Plate]
+
+If you do not plan to update to genuine Gates pulleys, no changes need to be made from 2.0.1.
+
+The following parts were tweaked for ease of assembly:
+- [Fixed Half Pulley](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchanger_locking_mechanism/fixed_half_pulley.STL) FXP-09
+    - The hole for the 16mm long M3 screw is now slightly larger to make it easier to screw in.
+- [Back Bed Coupler](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/back_bed_coupling_lift.STL) BBC-04
+    - has a threaded heat-set insert
+- [Front Left Bed Coupler](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/front_left_bed_coupling_lift.STL) LBC-04
+    - has a threaded heat-set insert
+- [Front Right Bed Coupler](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/front_right_bed_coupling_lift.STL) RBC-04
+    - has a threaded heat-set insert
+	
+The following parts were tweaked for aesthetics:
+- [Left Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/left_motor_corner_bracket_spacer.STL) LMS-04
+
 ## rel/jubilee_2.0.1 - Mar 10, 2020
 
 ### Major Fixes/Updates from 2.0
