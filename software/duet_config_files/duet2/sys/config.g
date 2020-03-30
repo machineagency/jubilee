@@ -42,7 +42,8 @@ M669 K1                                 ; CoreXY mode
 
 ; Kinematic bed ball locations.
 ; Locations are extracted from CAD model assuming lower left build plate corner is (0, 0) on a 305x305mm plate.
-M671 X300:5:152.5 Y354:354:24 S10 ; Front Left: (300, 354) | Front Right: (5, 354) | Back: (152.5, 24)
+;M671 X300:5:152.5 Y354:354:24 S10 ; Front Left: (300, 354) | Front Right: (5, 354) | Back: (152.5, 24)
+M671 X297:2.5:150 Y313.5:313.5:-16.5 S10 ; Front Left: (297.5, 313.5) | Front Right: (2.5, 313.5) | Back: (150, -16.5)
 
 
 ; Axis and motor configuration
@@ -50,12 +51,12 @@ M671 X300:5:152.5 Y354:354:24 S10 ; Front Left: (300, 354) | Front Right: (5, 35
 M350 X8 Y8 Z16 E16 U4 I1              ; Set 8x microstepping for xy, 16x for z axes & extruder, 4x for toolchanger lock. Use interpolation.
 M574 X1 Y1 Z1 S1                        ; Set homing switch configuration x low-end, y low-end, z low-end, all active-high (NC)
 M574 U1 S1                              ; Set homing switch configuration for toolchange lock. Both switches should be wired NC and in series.
-M906 X1950 Y1950 Z1600 E1250            ; Motor currents (mA)
-;M906 U670 I60                           ; LDO Toolchanger Elastic Lock Motor current and idle motor percentage. Do not lower idle current.
-M906 U900 I60                           ; StepperOnline Toolchanger Elastic Lock Motor current and idle motor percentage. Do not lower idle current.
-M201 X1000 Y1000 Z20 E1300 U1000        ; Accelerations (mm/s^2)
-M203 X13000 Y13000 Z800 E8000 U10000    ; Maximum speeds (mm/min). Conservative to ensure steps aren't lost when carrying tools.
-M566 X1000 Y1000 Z2 E3000 U200          ; Maximum jerk speeds mm/minute
+M906 X1950 Y1950 Z1750 E1250            ; Motor currents (mA)
+M906 U670 I60                           ; LDO Toolchanger Elastic Lock Motor current and idle motor percentage.
+;M906 U900 I60                           ; StepperOnline Toolchanger Elastic Lock Motor current and idle motor percentage
+M201 X1000 Y1000 Z20 E1300 U800        ; Accelerations (mm/s^2)
+M203 X13000 Y13000 Z800 E8000 U9000    ; Maximum speeds (mm/min)
+M566 X1000 Y1000 Z500 E3000 U50          ; Maximum jerk speeds mm/minute
 ;M92 X200 Y200                           ; Steps/mm for X,Y
 M92 X100 Y100
 M92 U30.578                             ; Steps/deg for U from (200 * 4 * 13.76)/360
@@ -64,11 +65,11 @@ M92 E830                                ; Extruder - 0.9 deg/step
 
 ; Set axis software limits and min/max switch-triggering positions.
 ; Adjusted such that (0,0) lies at the lower left corner of a 300x300mm square in the 305mmx305mm build plate.
-M208 X-16.5:317 Y-0:385 Z-0.2:315
+M208 X-11.5:311.5 Y-44:341 Z-0.2:315
 M208 U0:200                                 ; Set Elastic Lock (U axis) max rotation angle
 
 ; Thermistors
-M305 P0 S"Bed" T10000 B3435 H0                ; adjusted thermistor value after testing with an IR thermometer.
+M305 P0 S"Bed" T10000 B3435 H0                ; BOM-specified Terminal Lug Thermistor values.
 ;M305 P0 S"Bed" T10000 B3984 H0 L160          ; BOM-specified Terminal Lug Thermistor values.
 ;M305 P0 S"Bed" T100000 B3950 R4700 H0 L0    ; Built-in Keenovo Bed Thermistor values.
 M305 P1 X200                                ; Map Extruder 0 sensor to PT100 Channel 0
@@ -84,18 +85,21 @@ M307 H0 A270.7 C90.4 D6.7 B0 S1.0           ; Default Bed Heater Parameters, bef
 
 ; Tool definitions
 M563 P0 S"Extruder 0" D0 H1 F0          ; Define tool 0
-G10 P0 Z-2.8                            ; Set tool 0 offset from the bed. These will be different for everyone.
+G10 P0 X-4.5 Y44.02 Z-2.25              ; Set tool 0 offset from the bed
 G10 P0 S190 R170                        ; Set tool 0 operating and standby temperatures(-273 = "off")
 M572 D0 S0.1				; Set pressure advance on Extruder Drive 0
 
 M563 P1 S"Extruder 1" D1 H2 F2          ; Define tool 1
-G10 P1 X1.52 Y0.36 Z-2.45                ; Set tool 1 offset from the bed with tool-0 as a reference. These will be different for everyone.
+G10 P1 X-4.15 Y44.62 Z-2.45               ; Set tool 1 offset from the bed with tool-0 as a reference.
 G10 P1 S190 R170                        ; Set tool 1 operating and standby temperatures(-273 = "off")
 M572 D1 S0.1                            ; Set pressure advance on Extruder Drive 1
 
 ; Fans
 M106 P0 S0                               ; Turn off fan 0
 ;M106 P1 S0                               ; Turn off fan 1
+
+;Mesh Bed Leveling Settings:
+M557 X10:290 Y10:290 P6
 
 ; Z probing settings
 M558 P4 C2 H5 A1 T10000  S0.02
