@@ -18,7 +18,7 @@ G90                      ; Restore Absolute Movements
 G53 G1 Y340 F6000        ; Move to the pickup position with tool-0.
 G53 G1 Y340.5 F600        ; Contact the coupler by pushing on it.
 M98 P"/macros/tool_lock.g" ; Lock the tool
-G53 G1 Y3296 F6000        ; Retract the entire tool and wipe Backwards.
+G53 G1 Y296 F6000        ; Retract the entire tool and wipe Backwards.
 ;G53 G1 Y336 F10000       ; Wipe Forwards.
 ;G53 G1 Y296 F10000       ; Wipe Backwards.
 ;G53 G1 Y336 F10000       ; Wipe Forwards.
