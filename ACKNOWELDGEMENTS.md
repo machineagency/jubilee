@@ -11,6 +11,8 @@ Here's the (growing!) list of referenced projects and contributors
   * for an open reference for tool coupling
 * J Steve White and Tony Akens of the [Railcore](https://railcore.org/) Project
   * for an incredibly well-documented BOM, an example of 3-point bed leveling firmware configs, a great example of community engagement, and openness in sharing and answering questions
+* @marioquake on Github for suggesting a well-placed spacer
+* @Ocho Camino on Discord for an improved Power Inlet Socket
 
 ## Manufacturing and Supplier Acknowledgements
 * Matthew White at 713Maker
