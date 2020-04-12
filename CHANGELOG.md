@@ -2,6 +2,19 @@
 
 All changes between releases are tracked here.
 
+## (In Progress) rel/jubilee 2.0.3 (est: mid-May)
+- The frame now primarily uses metal corner plates
+    - These are both stiffer and serve as motor heatsinks
+- The toolchanger now uses an LDO motor
+- The Remote Elastic Lock now uses an actual spring instead of cut spring guide
+    - 1000 were made in China and distributed to various Jubilee resellers
+- The bed plate has additional holes for:
+    - a replaceable thermal fuse
+	- a spring-steel cable chain
+	- other peripherals bolted to the front of the machine (z probing?? XY camera probing??)
+- All square nuts have been removed and replaced with metal hubs
+
+
 ## rel/jubilee_2.0.2 - Apr 11, 2020
 
 ### Major Fixes/Updates from Jubilee 2.0.1
@@ -17,7 +30,7 @@ All changes between releases are tracked here.
 - CAD Model Changes
     - CAD model now displays the aluminum crossbar instead of the 6mm carbon fiber one. The carbon fiber crossbar is preserved as a reference in another configuration.
 	- All M5 Low Profile screw models were replaced with buttonheads, which is what the shopping list specifies.
-	- Solidworks Model Zip file has been replaced with all components in their original folder structure.
+	- Solidworks Model Zip file has been replaced with all components in their original folder structure. No longer requires using Git-LFS, which had bandwidth limits.
 	- Front Left and Front Right MGN12 Rails attach to the 2020 extrusion with 5 screw, not 4 screws, to be conisistent with the back Z rail. Fixes [Issue #72](https://github.com/machineagency/jubilee/issues/72)
 - Z Axis Assembly Changes
     - Spacing between dowel pins is now consistent on all three bed couplers. Fixes [Issue #59](https://github.com/machineagency/jubilee/issues/59)
