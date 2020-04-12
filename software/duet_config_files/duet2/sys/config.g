@@ -59,7 +59,8 @@ M203 X13000 Y13000 Z800 E8000 U9000    ; Maximum speeds (mm/min)
 M566 X1000 Y1000 Z500 E3000 U50          ; Maximum jerk speeds mm/minute
 ;M92 X200 Y200                           ; Steps/mm for X,Y
 M92 X100 Y100
-M92 U30.578                             ; Steps/deg for U from (200 * 4 * 13.76)/360
+M92 U30.578                             ; LDO Toolchanger Elastic Lock Motor Steps/deg for U from (200 * 4 * 13.76)/360
+;M92 U11.515                            ; Stepper-Online Toolchanger Elastic Lock Motor Steps/deg for U from (200 * 4 * 5.18181)/360
 M92 Z3200                               ; Steps/mm for Z for a 2mm pitch leadscrew, 0.9mm stepper. (16 * 400)/2
 M92 E830                                ; Extruder - 0.9 deg/step
 
