@@ -2,55 +2,113 @@
 
 All changes between releases are tracked here.
 
-## (UPCOMING) rel/jubilee_2.0.2 (in development now)
+## rel/jubilee_2.0.2 - Apr 11, 2020
 
 ### Major Fixes/Updates from Jubilee 2.0.1
-- [x] The frame is now Gates Pulley Compatible.
+- The frame is now Gates Pulley Compatible.
     - Either Genuine Gates pulleys or generic pulleys can be dropped into the machine. Note that Gates Pulleys are slightly taller, so shims and washers have been called out in the instructions to handle the height differences. Several printed parts have been adjusted, and they are called out below.
-- [x] All Delrin Corner Plates are now 3D printed except the Motor Plates. (You can still use the laser-cut ones, but you may need to add shim.)
+- All Delrin Corner Plates are now 3D printed except the Cinch Plates. (You can still use the laser-cut ones, but you may need to add shim.)
     - This is to to handle intercompatibility with Gates/Generic pulleys. The Gates pulleys require taller shoulder screws, so I've opted for thickening these parts instead of adding shim.
-- [ ] Metal Motor Plates now have a counterbore feature on both motor plates
+- Metal Motor Plate Changes
     - Both Motor Plates now have a counterbore feature to accommodate the thicker motor spacer. This change was driven by the geometry changes to make the Gates pulleys a drop-in replacement.
-- [ ] CAD model now displays the aluminum crossbar instead of the 6mm carbon fiber one.
-    - If you need to reference the carbon fiber crossbar, it is stored in a Solidworks configuration in the top level assembly.
-- [ ] All three printed components that couple the bed to the frame have heat-set inserts
-    - The springs now connect to this part with a solder terminal lug, just like how they are connected to the bed. This change makes these parts much easier to assemble.
-- [ ] Instructions have been updated for the bed plate, right motor corner plate (and upgrade), Z axis assembly, and heat set insert list
+- Printed Motor Plate changes
+    - slot for the stepper motor is now 11.4mm in radius to accomodate coarse 3D printer tolerances. Fixes [issue #68](https://github.com/machineagency/jubilee/issues/68)
+    - Printed Right Motor Plate now has a deeper counterbore feature
+- CAD Model Changes
+    - CAD model now displays the aluminum crossbar instead of the 6mm carbon fiber one. The carbon fiber crossbar is preserved as a reference in another configuration.
+	- All M5 Low Profile screw models were replaced with buttonheads, which is what the shopping list specifies.
+	- Solidworks Model Zip file has been replaced with all components in their original folder structure.
+	- Front Left and Front Right MGN12 Rails attach to the 2020 extrusion with 5 screw, not 4 screws, to be conisistent with the back Z rail. Fixes [Issue #72](https://github.com/machineagency/jubilee/issues/72)
+- Z Axis Assembly Changes
+    - Spacing between dowel pins is now consistent on all three bed couplers. Fixes [Issue #59](https://github.com/machineagency/jubilee/issues/59)
+    - All three printed components that couple the bed to the frame have heat-set inserts
+	- Bed springs now connect with a bent solder terminal lug
+    - Spring Stock for the bed springs has been replaced with proper 15mm springs
+    - Overall, adding springs to the bed is now much easier to assemble and remove.
+- Carriage Changes
+    - added a spacer inside the carriage center plate on the Twist Lock Assembly to remove axial force on the carriage pulley (performance improvement) Addresses [Issue #58](https://github.com/machineagency/jubilee/issues/58)
+	- replaced M3 16mm Flathead screws with Buttonhead screws (reduces unique part count)
+	- Twist lock has been bumped forward 0.2mm to improve compatibility with picking up E3D tool plates
+	- Carriage Back Plate has a Zip Tie tab for better Z axis cable management
+	- Carriage Center Plate now has enough space to accomodate a variant of the current limit switch (PN: D2HW-C202MR), which has flying leads.
+- Default Tool/Extruder Changes
+    - Wedge Plate Geometry has been bumped forward ~0.35mm to change twist lock "logking" position to be slightly less than 180 degrees.
+	- Screw holes for the fan shround have been bumped down slightly.
+- Electronics Back Panel Changes
+    - M5 panel mounting screws have been scooched over a few mm to make space for installation with the XY motors installed
+	- cutout has been added in the corner to make room for the 3D Printed PSU Socket
+	- Pocket for Bed wires has been relocated upwards in prep for a cable chain on the bed
+	- Bed SSR has been relocated upwards in prep for a cable chain on the bed
+- 120v Side Panel Changes
+    - PSU cutout has been removed and replaced with a printed part. This change makes the power inlet socket much easier to swap for alternates.
+	- The four M5 Screw holes in the corner have been scooched in 5mm
+- Ethernet Side Panel Changes
+	- Four M5 Screw holes in the corner have been scooched in 5mm
+- Updated instructions for
+    - toolchanger carriage assembly
+    - bed plate
+	- double pulley corner plates
+	- left and right motor corner plates (and upgrade)
+	- Z axis assembly. New instructions for bent terminal lugs.
+	- heat set insert list
+	- default extruder. Fixes [Issue #70](https://github.com/machineagency/jubilee/issues/70)
 
 ### Shopping List Changes
-- [ ] The 2.0.1 Y axis limit switch (Part Num: D2HW-BL201H) has been reverted to the original switch from 2.0 (Part Num: D2HW-C201H).
+- The 2.0.1 Y axis limit switch (Part Num: D2HW-BL201H) has been reverted to the original switch from 2.0 (Part Num: D2HW-C201H).
     - The original Right Motor Plate Spacer was too short to fully embed the Y axis switch, but resizing for the Gates pulley option added enough space to add the original switch in. Overall, reducing the unique part count makes the project easier to order and assemble.
-- [ ] Bed Retension Springs are now a stock part from AliExpress
-    - 2.0.1 (and before) had instructions for making your own springs out of spring stock. This is a TON of extra work for a part you can just buy.
-- [ ] Bed Retension Clips are now a different type of Terminal Lug
-    - The Keystone 7328 Terminal Lugs have been replaced by 4000 Terminal Lugs, which are much easier to bend around the spring. You will need 6 of them.
-- [ ] 3 more M3 heat set inserts
+- Shoulder Screws are now sourced from Filastruder, which is slightly cheaper than McMaster-Carr.
+- All 20mm long, 5mm diameter shoulder screws have been replaced with 25mm long versions.
+- Bed Retension Springs are now a stock part from [Aliexpress](https://aliexpress.com/item/33043988987.html?spm=a2g0s.9042311.0.0.447133edZMsmcq). (Order the 15mm version.)
+    - 2.0.1 (and before) had instructions for making your own springs out of spring stock. This was a TON of extra work for a part you can just buy.
+- Bed Retension Clips are now a different type of Terminal Lug
+    - The Keystone [7328](https://www.digikey.com/product-detail/en/keystone-electronics/7328/36-7328-ND/316697) Terminal Lugs on the bed have been replaced by [4000](https://www.digikey.com/product-detail/en/keystone-electronics/4000/36-4000-ND/316071) Terminal Lugs, which are much easier to bend around the spring.
+- 3 more M3 heat set inserts
+- pack of washers for generic pulleys.
+- Belleville disc spring is no longer required and has been removed
+- 4x M3, 16mm Flathead screws on the Carriage front have been replaced with Buttonheads
+- Previous Power Inlet Socket from Amazon (ASIN: B07C184P7L) has two alternates listed from Digikey (Part Num: CCM2178-ND‎) and Mouser (Part Num: 446-084.01001.00-RSI).
+    - The alternates are twin fused to account for a short-to-ground failure mode in a Hot-Hot 220V configuration (rare, but possible in some countries). They are set to become the primary power inlet sockets in a future revision.
+
+
+### Config File Changes
+- In **config.g**, the machine's XY Origin has been adjusted to be relative to the carriage's ZProbe location when no tools are present. See the [Frame Layout](https://github.com/machineagency/jubilee/wiki/Frame-Layout) for diagrams.
+    - *bed.g* has been adjusted to reflect the new "ZProbe-Centric" origin
+    - **tfreeX.g**, **tpreX.g**, and **tpostX.g** have had their parking post locations adjusted to reflect the new "ZProbe-Centric" XY origin.
+    - tools are now released 1m behind where they are picked up. This is such that they can be pushed in Y first to contact the tool balls before locking them. This is a workaround until we get nice slippy Delrin replacement plates.
+    - **tool_lock.g** now includes a slight 0.5mm push forward while engaging the twist lock.
 
 ### Updating from 2.0.1 to 2.0.2
 If you would like to have the future option of updating to genuine Gates pulleys, the following part **must** be reprinted
 - 4x [Printed Pulley Spacer]
-- [Right Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_motor_corner_bracket_spacer.STL) RMS-04
-- [Right Motor Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_motor_plate.STL) RMP-04
-- [Carriage Back Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_back_plate.STL) CBP-03
-- [Left Crossbar Pulley Reinforcement Plate]
-- [Right Crossbar Pulley Reinforcement Plate]
-- [Left Corner Pulley Reinforcement Plate]
-- [Right Corner Pulley Reinforcement Plate]
+- RMS-05 [Right Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_motor_corner_bracket_spacer.STL)
+- RMP-03 [Right Motor Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_motor_plate.STL)
+- CPB-03 [Carriage Back Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_back_plate.STL)
+- 2x [Belt Clasp]
+- LXR-01 [Left Crossbar Pulley Reinforcement Plate] (New!)
+- RXR-01 [Right Crossbar Pulley Reinforcement Plate] (New!)
+- LCR-01 [Left Corner Pulley Reinforcement Plate] (New!)
+- RCR-01 [Right Corner Pulley Reinforcement Plate] (New!)
+- LMR-01 [Left Motor Reinforcement Plate] (New!)
+- RMR-01 [Right Motor Reinforcement Plate] (New!)
 
-If you do not plan to update to genuine Gates pulleys, no changes need to be made from 2.0.1.
+The following parts were added/tweaked to better accomodate E3D tool plates
+- TLS-01 [Twist Lock Spacer] (New!)
+- [Wedge Plate] 
 
-The following parts were tweaked for ease of assembly:
-- [Fixed Half Pulley](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchanger_locking_mechanism/fixed_half_pulley.STL) FXP-09
+The following parts were added/tweaked for ease of sourcing parts or assembly:
+- FXP-09 [Fixed Half Pulley](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchanger_locking_mechanism/fixed_half_pulley.STL)
     - The hole for the 16mm long M3 screw is now slightly larger to make it easier to screw in.
-- [Back Bed Coupler](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/back_bed_coupling_lift.STL) BBC-04
+- BBC-04 [Back Bed Coupler](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/back_bed_coupling_lift.STL)
     - has a threaded heat-set insert
-- [Front Left Bed Coupler](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/front_left_bed_coupling_lift.STL) LBC-04
+- LBC-04 [Front Left Bed Coupler](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/front_left_bed_coupling_lift.STL)
     - has a threaded heat-set insert
-- [Front Right Bed Coupler](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/front_right_bed_coupling_lift.STL) RBC-04
+- RBC-04 [Front Right Bed Coupler](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/front_right_bed_coupling_lift.STL)
     - has a threaded heat-set insert
+- PSH-01 [PSU Socket Holder] (New!)
+    - This part to replace the acrylic cutout, which was brittle and prone to cracking. It's also easier to modify a 3D printed part for slightly different sized PSU sockets. 
 	
 The following parts were tweaked for aesthetics:
-- [Left Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/left_motor_corner_bracket_spacer.STL) LMS-04
+- LMS-04 [Left Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/left_motor_corner_bracket_spacer.STL)
 
 ## rel/jubilee_2.0.1 - Mar 10, 2020
 
@@ -72,15 +130,15 @@ The following parts were tweaked for aesthetics:
 - Adding Heatsinks to default extruder BOM for the stepper motors as they can get hot enough to warp the tool plates
 
 The following parts *must* be reprinted since rel/jubilee-1.0:
-- [Carriage Back Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_back_plate.STL)
+- CPB-02 [Carriage Back Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_back_plate.STL)
 - [Belt Clasp](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/belt_clasp.STL)
-- [Printed Pulley Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/printed_pulley_spacer.STL)
-- [Parking Post Base](https://github.com/machineagency/jubilee/blob/master/tools/jubilee_tools/tool_posts/configurable_tool_post/fabrication_exports/parking_post_base_47mm.STL)
-- [Tool Holder](https://github.com/machineagency/jubilee/blob/master/tools/jubilee_tools/tool_posts/configurable_tool_post/fabrication_exports/tool_holder_47mm.STL)
+- PPS-02 [Printed Pulley Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/printed_pulley_spacer.STL)
+- PPB47-03 [Parking Post Base](https://github.com/machineagency/jubilee/blob/master/tools/jubilee_tools/tool_posts/configurable_tool_post/fabrication_exports/parking_post_base_47mm.STL)
+- TH47-03 [Tool Holder](https://github.com/machineagency/jubilee/blob/master/tools/jubilee_tools/tool_posts/configurable_tool_post/fabrication_exports/tool_holder_47mm.STL)
 
 The following parts were tweaked, but do not need to be reprinted if you have already assembled your machine.
-- [Left Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/left_motor_corner_bracket_spacer.STL) has a bumper feature to make the y rails easier to install in a consistent spot.
-- [Right Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_motor_corner_bracket_spacer.STL) has a bumper feature to make the y rails easier to install in a consistent spot.
+- LMS-03 [Left Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/left_motor_corner_bracket_spacer.STL) has a bumper feature to make the y rails easier to install in a consistent spot.
+- RMS-04 [Right Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_motor_corner_bracket_spacer.STL) has a bumper feature to make the y rails easier to install in a consistent spot.
 
 ### Minor Fixes/Tweaks
 - Most printed parts now have part numbers with the revision id on them. This feature is useful for identifying what version of a part you have to decide whether you need to upgrade to a newer revision in the future
