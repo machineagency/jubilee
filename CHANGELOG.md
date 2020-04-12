@@ -31,19 +31,19 @@ All changes between releases are tracked here.
 	- Twist lock has been bumped forward 0.2mm to improve compatibility with picking up E3D tool plates
 	- Carriage Back Plate has a Zip Tie tab for better Z axis cable management
 	- Carriage Center Plate now has enough space to accomodate a variant of the current limit switch (PN: D2HW-C202MR), which has flying leads.
-- [ ] Default Tool/Extruder Changes
+- Default Tool/Extruder Changes
     - Wedge Plate Geometry has been bumped forward ~0.35mm to change twist lock "logking" position to be slightly less than 180 degrees.
 	- Screw holes for the fan shround have been bumped down slightly.
-- [x] Electronics Back Panel Changes
+- Electronics Back Panel Changes
     - M5 panel mounting screws have been scooched over a few mm to make space for installation with the XY motors installed
 	- cutout has been added in the corner to make room for the 3D Printed PSU Socket
 	- Pocket for Bed wires has been relocated upwards in prep for a cable chain on the bed
 	- Bed SSR has been relocated upwards in prep for a cable chain on the bed
-- [ ] 120v Side Panel Changes
+- 120v Side Panel Changes
     - PSU cutout has been removed and replaced with a printed part. This change makes the power inlet socket much easier to swap for alternates.
 	- The four M5 Screw holes in the corner have been scooched in 5mm
-- [ ] Ethernet Side Panel Changes
-	- 4 M5 Screw holes in the corner have been scooched in 5mm
+- Ethernet Side Panel Changes
+	- Four M5 Screw holes in the corner have been scooched in 5mm
 - Updated instructions for
     - toolchanger carriage assembly
     - bed plate
@@ -54,19 +54,21 @@ All changes between releases are tracked here.
 	- default extruder. Fixes [Issue #70](https://github.com/machineagency/jubilee/issues/70)
 
 ### Shopping List Changes
-- [ ] The 2.0.1 Y axis limit switch (Part Num: D2HW-BL201H) has been reverted to the original switch from 2.0 (Part Num: D2HW-C201H).
+- The 2.0.1 Y axis limit switch (Part Num: D2HW-BL201H) has been reverted to the original switch from 2.0 (Part Num: D2HW-C201H).
     - The original Right Motor Plate Spacer was too short to fully embed the Y axis switch, but resizing for the Gates pulley option added enough space to add the original switch in. Overall, reducing the unique part count makes the project easier to order and assemble.
-- [ ] All 20mm long, 5mm diameter shoulder screws have been replaced with 25mm long versions.
-- [ ] Bed Retension Springs are now a stock part from [Aliexpress](https://aliexpress.com/item/33043988987.html?spm=a2g0s.9042311.0.0.447133edZMsmcq). (Order the 15mm version.)
+- Shoulder Screws are now sourced from Filastruder, which is slightly cheaper than McMaster-Carr.
+- All 20mm long, 5mm diameter shoulder screws have been replaced with 25mm long versions.
+- Bed Retension Springs are now a stock part from [Aliexpress](https://aliexpress.com/item/33043988987.html?spm=a2g0s.9042311.0.0.447133edZMsmcq). (Order the 15mm version.)
     - 2.0.1 (and before) had instructions for making your own springs out of spring stock. This was a TON of extra work for a part you can just buy.
-- [ ] Bed Retension Clips are now a different type of Terminal Lug
+- Bed Retension Clips are now a different type of Terminal Lug
     - The Keystone [7328](https://www.digikey.com/product-detail/en/keystone-electronics/7328/36-7328-ND/316697) Terminal Lugs on the bed have been replaced by [4000](https://www.digikey.com/product-detail/en/keystone-electronics/4000/36-4000-ND/316071) Terminal Lugs, which are much easier to bend around the spring.
-- [ ] 3 more M3 heat set inserts
-- [ ] pack of washers for generic pulleys.
-- [ ] Belleville disc spring is no longer required and has been removed
-- [ ] 4x M3, 16mm Flathead screws on the Carriage front have been replaced with Buttonheads
-- [ ] Previous Power Inlet Socket from Amazon (ASIN: B07C184P7L) has been replaced by a Digikey part (Part Num: CCM2178-ND‎).
-    - This version is (1) more broadly available than the prior version and (2) twin fused to account for a short-to-ground failure mode in a Hot-Hot 220V configuration (rare, but possible in some countries).
+- 3 more M3 heat set inserts
+- pack of washers for generic pulleys.
+- Belleville disc spring is no longer required and has been removed
+- 4x M3, 16mm Flathead screws on the Carriage front have been replaced with Buttonheads
+- Previous Power Inlet Socket from Amazon (ASIN: B07C184P7L) has two alternates listed from Digikey (Part Num: CCM2178-ND‎) and Mouser (Part Num: 446-084.01001.00-RSI).
+    - The alternates are twin fused to account for a short-to-ground failure mode in a Hot-Hot 220V configuration (rare, but possible in some countries). They are set to become the primary power inlet sockets in a future revision.
+
 
 ### Config File Changes
 - In **config.g**, the machine's XY Origin has been adjusted to be relative to the carriage's ZProbe location when no tools are present. See the [Frame Layout](https://github.com/machineagency/jubilee/wiki/Frame-Layout) for diagrams.
