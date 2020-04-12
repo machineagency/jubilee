@@ -92,21 +92,20 @@ All changes between releases are tracked here.
 
 ### Updating from 2.0.1 to 2.0.2
 If you would like to have the future option of updating to genuine Gates pulleys, the following part **must** be reprinted
-- 4x [Printed Pulley Spacer]
+- 4x [Printed Pulley Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/printed_pulley_spacer.STL)
 - RMS-05 [Right Motor Plate Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_motor_corner_bracket_spacer.STL)
 - RMP-03 [Right Motor Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_motor_plate.STL)
 - CPB-03 [Carriage Back Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_back_plate.STL)
-- 2x [Belt Clasp]
-- LXR-01 [Left Crossbar Pulley Reinforcement Plate] (New!)
-- RXR-01 [Right Crossbar Pulley Reinforcement Plate] (New!)
-- LCR-01 [Left Corner Pulley Reinforcement Plate] (New!)
-- RCR-01 [Right Corner Pulley Reinforcement Plate] (New!)
-- LMR-01 [Left Motor Reinforcement Plate] (New!)
-- RMR-01 [Right Motor Reinforcement Plate] (New!)
+- 2x [Belt Clasp](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/belt_clasp.STL)
+- LXR-01 [Left Crossbar Pulley Reinforcement Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/left_crossbar_pulley_reinforcement_plate.STL) (New!)
+- RXR-01 [Right Crossbar Pulley Reinforcement Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_crossbar_pulley_reinforcement_plate.STL) (New!)
+- LCR-01 [Left Corner Pulley Reinforcement Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/left_corner_pulley_reinforcement_plate.STL) (New!)
+- RCR-01 [Right Corner Pulley Reinforcement Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_corner_pulley_reinforcement_plate.STL) (New!)
+- 2x LMR-01 [Motor Reinforcement Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/motor_reinforcement_plate.STL) (New!)
 
 The following parts were added/tweaked to better accomodate E3D tool plates
-- TLS-01 [Twist Lock Spacer] (New!)
-- [Wedge Plate] 
+- TLS-01 [Twist Lock Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/twist_lock_spacer.STL) (New!)
+- [Wedge Plate](https://github.com/machineagency/jubilee/blob/master/tools/jubilee_tools/tools/base_tool/fabrication_exports/wedge_plate.STL) 
 
 The following parts were added/tweaked for ease of sourcing parts or assembly:
 - FXP-09 [Fixed Half Pulley](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchanger_locking_mechanism/fixed_half_pulley.STL)
@@ -117,7 +116,7 @@ The following parts were added/tweaked for ease of sourcing parts or assembly:
     - has a threaded heat-set insert
 - RBC-04 [Front Right Bed Coupler](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/front_right_bed_coupling_lift.STL)
     - has a threaded heat-set insert
-- PSH-01 [PSU Socket Holder] (New!)
+- PSH-01 [PSU Socket Holder](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/psu_socket_holder.STL) (New!)
     - This part to replace the acrylic cutout, which was brittle and prone to cracking. It's also easier to modify a 3D printed part for slightly different sized PSU sockets. 
 	
 The following parts were tweaked for aesthetics:
