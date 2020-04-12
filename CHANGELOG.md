@@ -69,17 +69,17 @@ All changes between releases are tracked here.
 ### Shopping List Changes
 - The 2.0.1 Y axis limit switch (Part Num: D2HW-BL201H) has been reverted to the original switch from 2.0 (Part Num: D2HW-C201H).
     - The original Right Motor Plate Spacer was too short to fully embed the Y axis switch, but resizing for the Gates pulley option added enough space to add the original switch in. Overall, reducing the unique part count makes the project easier to order and assemble.
-- Shoulder Screws are now sourced from Filastruder, which is slightly cheaper than McMaster-Carr.
-- All 20mm long, 5mm diameter shoulder screws have been replaced with 25mm long versions.
-- Bed Retension Springs are now a stock part from [Aliexpress](https://aliexpress.com/item/33043988987.html?spm=a2g0s.9042311.0.0.447133edZMsmcq). (Order the 15mm version.)
+- Shoulder Screws are now sourced from [Filastruder](https://www.filastruder.com/collections/railcore/products/shoulder-screws-bolts?variant=17989593104455), which is slightly cheaper than McMaster-Carr.
+- All six 20mm long, 5mm diameter shoulder screws have been replaced with 25mm long versions.
+- The three Bed Retension Springs are now a stock part from [Aliexpress](https://aliexpress.com/item/33043988987.html?spm=a2g0s.9042311.0.0.447133edZMsmcq). (Order the 15mm version.)
     - 2.0.1 (and before) had instructions for making your own springs out of spring stock. This was a TON of extra work for a part you can just buy.
 - Bed Retension Clips are now a different type of Terminal Lug
-    - The Keystone [7328](https://www.digikey.com/product-detail/en/keystone-electronics/7328/36-7328-ND/316697) Terminal Lugs on the bed have been replaced by [4000](https://www.digikey.com/product-detail/en/keystone-electronics/4000/36-4000-ND/316071) Terminal Lugs, which are much easier to bend around the spring.
-- 3 more M3 heat set inserts
+    - The three Keystone [7328](https://www.digikey.com/product-detail/en/keystone-electronics/7328/36-7328-ND/316697) Terminal Lugs on the bed and the three M2 set screws have been replaced by six [4000](https://www.digikey.com/product-detail/en/keystone-electronics/4000/36-4000-ND/316071) Terminal Lugs, which are much easier to bend around the spring.
+- three more M3 heat set inserts
 - pack of washers for generic pulleys.
-- Belleville disc spring is no longer required and has been removed
-- 4x M3, 16mm Flathead screws on the Carriage front have been replaced with Buttonheads
-- Previous Power Inlet Socket from Amazon (ASIN: B07C184P7L) has two alternates listed from Digikey (Part Num: CCM2178-ND‎) and Mouser (Part Num: 446-084.01001.00-RSI).
+- The Belleville disc spring is no longer required and has been removed
+- The four M3, 16mm Flathead screws on the Carriage Front Plate have been replaced with four M3 12mm long Buttonhead screws.
+- Previous Power Inlet Socket from Amazon (ASIN: B07C184P7L) now has two alternates listed from Digikey (Part Num: CCM2178-ND‎) and Mouser (Part Num: 446-084.01001.00-RSI).
     - The alternates are twin fused to account for a short-to-ground failure mode in a Hot-Hot 220V configuration (rare, but possible in some countries). They are set to become the primary power inlet sockets in a future revision.
 
 
