@@ -13,6 +13,7 @@ Here's the (growing!) list of referenced projects and contributors
   * for an incredibly well-documented BOM, an example of 3-point bed leveling firmware configs, a great example of community engagement, and openness in sharing and answering questions
 * @marioquake on Github for suggesting a well-placed spacer
 * @Ocho Camino on Discord for an improved Power Inlet Socket
+* @Troll on Discord for a fantastic Logo on the bed plate rendering
 
 ## Manufacturing and Supplier Acknowledgements
 * Matthew White at 713Maker
