@@ -14,6 +14,16 @@ All changes between releases are tracked here.
 	- other peripherals bolted to the front of the machine (z probing?? XY camera probing??)
 - All square nuts have been removed and replaced with metal hubs
 
+## Changes to Printed Parts
+- Printed Pulley Spacer can now be clipped in after the fact to ensure shims were installed correctly beforehand.
+
+## Hotfix to Jubilee 2.0.2 - April 27, 2020
+If your are using printed corner plates, not the Delrin plates, reprint them:
+- LXR-02 [Left Crossbar Pulley Reinforcement Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/left_crossbar_pulley_reinforcement_plate.STL) has a smaller diameter offset face to not interfere with the pulleys. Also: chamfer for easier shoulder screw insertion
+- RXR-02 [Right Crossbar Pulley Reinforcement Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_crossbar_pulley_reinforcement_plate.STL)  has a smaller diameter offset face to not interfere with the pulley. Also: chamfer for easier shoulder screw insertion
+- LCR-02 [Left Corner Pulley Reinforcement Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/left_corner_pulley_reinforcement_plate.STL) has a smaller diameter offset face to not interfere with the pulley. Also: chamfer for easier shoulder screw insertion
+- RCR-02 [Right Corner Pulley Reinforcement Plate](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/right_corner_pulley_reinforcement_plate.STL) has a smaller diameter offset face to not interfere with the upper pulley. Also: chamfer for easier shoulder screw insertion
+
 
 ## rel/jubilee_2.0.2 - Apr 11, 2020
 
