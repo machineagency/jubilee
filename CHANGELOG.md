@@ -13,6 +13,8 @@ All changes between releases are tracked here.
 	- a spring-steel cable chain
 	- other peripherals bolted to the front of the machine (z probing?? XY camera probing??)
 - All square nuts have been removed and replaced with metal hubs
+- The fan shroud screw holes for the Default Tool Plate have been lowered a couple mm.
+- Added Frame Wiring Diagram
 
 ## Changes to Printed Parts
 - Printed Pulley Spacer can now be clipped in after the fact to ensure shims were installed correctly beforehand.
