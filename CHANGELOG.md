@@ -2,22 +2,42 @@
 
 All changes between releases are tracked here.
 
-## (In Progress) rel/jubilee 2.0.3 (est: mid-May)
-- The frame now primarily uses metal corner plates
-    - These are both stiffer and serve as motor heatsinks
+## (Upcoming) rel/jubilee 2.0.4 (est: early June)
 - The toolchanger now uses an LDO motor
 - The Remote Elastic Lock now uses an actual spring instead of cut spring guide
     - 1000 were made in China and distributed to various Jubilee resellers
+- All square nuts have been removed and replaced with metal hubs
+
+### Shopping List Changes
+- 0.0625in Delrin plate removed. No longer necessary with the new Remote Elastic Lock
+
+## (In Progress) rel/jubilee 2.0.3 (est: mid-May)
+- The frame now primarily uses metal corner plates
+    - These are both stiffer and serve as motor heatsinks
 - The bed plate has additional holes for:
     - a replaceable thermal fuse
 	- a spring-steel cable chain
 	- other peripherals bolted to the front of the machine (z probing?? XY camera probing??)
-- All square nuts have been removed and replaced with metal hubs
 - The fan shroud screw holes for the Default Tool Plate have been lowered a couple mm.
-- Added Frame Wiring Diagram
+- The Default Tool Plate has a small chamfer to improve printability (This change removes the effect of elephant's foot.)
+- Added Frame Wiring Diagram and Default Extruder Tool Wiring Diagram
+- Z-axis motors now have two stacked shims instead of one to reduce wear on the coupler
 
-## Changes to Printed Parts
-- Printed Pulley Spacer can now be clipped in after the fact to ensure shims were installed correctly beforehand.
+### Changes to Printed Parts
+- Printed Pulley Spacer can now be clipped in after-the-fact to ensure shims were installed correctly beforehand.
+- Twist Lock Spacer outer diameter reduced for better printability across a range of printers
+- Carriage Center Plate now has heat set inserts
+- Z-axis motor plates
+    - now have a chamfer on the bottom surface for better printability across a range of printers. (This change removes the effect of elephant's foot.)
+	- Cutout for vertical extrusions has also been shrunk such that it can act as a locating feature.
+    - offset added between the motor and the plate such that the leadscrews don't "bottom out" inside the coupler
+- Z Motor Spacer height adjustment to accommodate for Z-axis motor plate change
+- Feet are now 5mm taller
+
+### Shopping List Changes
+- Four more M3 Heat Set Inserts
+- Motor Plate Upgrade Parts are now defaults. TODO: note them here
+
 
 ## Hotfix to Jubilee 2.0.2 - May 18, 2020
 If your are using printed corner plates, not the Delrin plates, and they do not fit with your pulley stackup, reprint these updated versions. This version is slightly more forgiving adding 0.2mm of tolerance in the Z dimension.
