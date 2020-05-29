@@ -1,4 +1,4 @@
-Jubilee V2.0.2
+Jubilee V2.1.0
 =======
 
 Jubilee is an open-source, extensible multi-tool motion platform capable of running GCode for non-loadbearing automation applications.
@@ -7,7 +7,7 @@ Jubilee is an open-source, extensible multi-tool motion platform capable of runn
 
 Out-of-the-box, Jubilee is configured for multimaterial 3D printing and multicolor pen plotting, but we've had success with light liquid-handling and image stitching applications too.
 
-While this repository contains all the design-related content needed to build a Jubilee, we suggest using the [**Wiki**](https://github.com/machineagency/jubilee/wiki) to navigate through this "file soup."
+While this repository contains all the design-related content needed to build a Jubilee, we suggest using the [**Wiki**](https://jubilee3d.com/index.php?title=Main_Page) to navigate through this "file soup."
 
 ## Top-Level Specs
 * Automatic Toolchanging compatible with E3D tool plates
@@ -18,13 +18,13 @@ While this repository contains all the design-related content needed to build a 
 * autotramming with 3-point bed-leveling
 * ~$1540 for a single unit, not including tools. See the [BOM][bom] for the part breakdown
 * User Extensible! We encourage extending the design to custom applications via custom tools and bed plates
-* Full specs listed on [this wiki page](https://github.com/machineagency/jubilee/wiki/Feature-Breakdown)
+* Full specs listed on [this wiki page](https://jubilee3d.com/index.php?title=Specs)
 
 ## Build your own Jubilee
 
-The best way to get started is to thumb through the [**Assembly Instructions**](https://github.com/machineagency/jubilee/wiki/Assembly-Instructions) and [**Bill of Materials**][bom] first.
+The best way to get started is to thumb through the [**Assembly Instructions**](https://jubilee3d.com/index.php?title=Assembly_Instructions) and [**Bill of Materials**][bom] first.
 
-Then head over to the [**Wiki**](https://github.com/machineagency/jubilee/wiki) to start gathering tools and deciding which parts to buy and which parts to make.
+Then head over to the [**Wiki**](https://jubilee3d.com/index.php?title=Main_Page) to start gathering tools and deciding which parts to buy and which parts to make.
 
 ## Repository Contents
 The Repository is broken into three main chunks:
@@ -67,4 +67,4 @@ Jubilee is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unporte
 [cc-by]: https://creativecommons.org/licenses/by-sa/3.0/
 [cc-by-image]: https://i.creativecommons.org/l/by-sa/3.0/88x31.png
 [discord]: https://discord.gg/XkphRqb
-[wiki]: https://github.com/machineagency/jubilee/wiki
+[wiki]: https://jubilee3d.com/

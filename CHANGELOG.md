@@ -2,26 +2,20 @@
 
 All changes between releases are tracked here.
 
-## (Upcoming) rel/jubilee 2.0.4 (est: early June)
+## rel/jubilee 2.1.0 - May 29, 2020 
 - The toolchanger now uses an LDO motor
 - The Remote Elastic Lock now uses an actual spring instead of cut spring guide
-    - 1000 were made in China and distributed to various Jubilee resellers
-- All square nuts have been removed and replaced with metal hubs
-
-### Shopping List Changes
-- 0.0625in Delrin plate removed. No longer necessary with the new Remote Elastic Lock
-
-## (In Progress) rel/jubilee 2.0.3 (est: mid-May)
-- The frame now primarily uses metal corner plates
+    - 1000 were made in China and distributed to various Jubilee part resellers
+- The frame now uses metal motor plates by default
     - These are both stiffer and serve as motor heatsinks
 - The bed plate has additional holes for:
     - a replaceable thermal fuse
 	- a spring-steel cable chain
-	- other peripherals bolted to the front of the machine (z probing?? XY camera probing??)
 - The fan shroud screw holes for the Default Tool Plate have been lowered a couple mm.
 - The Default Tool Plate has a small chamfer to improve printability (This change removes the effect of elephant's foot.)
 - Added Frame Wiring Diagram and Default Extruder Tool Wiring Diagram
 - Z-axis motors now have two stacked shims instead of one to reduce wear on the coupler
+- Remote Elastic Lock redesign and compatible with both StepperOnline and LDO motor options
 
 ### Changes to Printed Parts
 - Printed Pulley Spacer can now be clipped in after-the-fact to ensure shims were installed correctly beforehand.
@@ -32,12 +26,36 @@ All changes between releases are tracked here.
 	- Cutout for vertical extrusions has also been shrunk such that it can act as a locating feature.
     - offset added between the motor and the plate such that the leadscrews don't "bottom out" inside the coupler
 - Z Motor Spacer height adjustment to accommodate for Z-axis motor plate change
-- Feet are now 5mm taller
+- Feet are now 5mm taller to make space for optional heatsinks
+- Added thumb handle to the Remote Elastic Lock
 
 ### Shopping List Changes
-- Four more M3 Heat Set Inserts
-- Motor Plate Upgrade Parts are now defaults. TODO: note them here
+- +1 Subtle Design Mag Sheet
+- +1 plain cast tool build plate
+- -1 embedded magnet cast tool build plate
+- +1 Motor Plate Set
+- +4 M4 Shoulder Screw, 16mm long, 5mm diameter
+- -4 M4 Shoulder Screw, 12mm long, 5mm diameter
+- +12 M3 buttonhead screws, 12mm long; -12 M3 buttonhead screws, 10mm long 
+- +1 Remote Elastic Lock Hub
+- +1 Remote Elastic Lock Extension Spring
+- +1 longer sleeve bearing, -1 old length sleeve bearing
+- +1 M3 Set Screw, 5mm long for Remote Elastic Lock Hub
+- +10 M3 Tapered Heat Set Inserts, 22 total
+- -2 M5 Buttonhead Screw, 14mm long
+- -0.0625in Delrin plate. No longer necessary with the new Remote Elastic Lock
 
+### Updating from 2.0.2 to 2.1.0
+
+#### Major Improvements
+- double up Z Axis Shim.
+- If your shim rings on the XY motion system had a 10mm outer diameter, swap them for shim rings with a 7 or 8mm outer diameter.
+
+#### Negligible Improvements
+- Replace Z Motor Plates and Z Motor Spacers.
+- Replace Carriage Center Plate
+- Replace Carriage Back Plate
+- Replace Remote Elastic Lock. (Don't actually do this unless you haven't assembled it yet.)
 
 ## Hotfix to Jubilee 2.0.2 - May 18, 2020
 If your are using printed corner plates, not the Delrin plates, and they do not fit with your pulley stackup, reprint these updated versions. This version is slightly more forgiving adding 0.2mm of tolerance in the Z dimension.
