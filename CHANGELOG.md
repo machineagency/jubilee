@@ -3,11 +3,12 @@
 All changes between releases are tracked here.
 
 ## rel/jubilee 2.1.0 - May 29, 2020 
-- The toolchanger now uses an LDO motor
+- The toolchanger now uses either an LDO Motor or the original StepperOnline motor. You must print the motor clip and base plate pertaining to the motor you have.
 - The Remote Elastic Lock now uses an actual spring instead of cut spring guide
     - 1000 were made in China and distributed to various Jubilee part resellers
 - The frame now uses metal motor plates by default
     - These are both stiffer and serve as motor heatsinks
+- The shopping list no longer features the embedded mag plate as the default and instead lists a plain plate with a high-temp magnetic sticky sheet.
 - The bed plate has additional holes for:
     - a replaceable thermal fuse
 	- a spring-steel cable chain
