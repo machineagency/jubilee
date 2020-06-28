@@ -2,7 +2,47 @@
 
 All changes between releases are tracked here.
 
+## rel/jubilee 2.1.1 - June 27, 2020
+
+- REL Changes/Updates
+  - Fixed Pulley tab is now slightly shorter to prevent rubbing on the back panel
+  - Base Plate now accommodates a 3.0 or 3.2mm back panel
+  - Base Plate motor distance to the back panel has been moved back 1mm for extra clearance for the Fixed Pulley tab.
+  - Wire Rope Exit Holes are slightly wider on the base plate.
+- Carriage Changes
+  - Carriage Center Plate has four holes on the bottom to adjust the screws on the MGN12 Carriage without removing the front and back plates.
+  - Wire Rope Exit Holes are slightly wider on SGC-02.
+- Feet are now 46mm tall to accommodate heat sinks.
+- Z-axis motors now use proper thrust bearings instead of two ring shims.
+- Power Supply holder has one fewer fastener and more fastener hole clearance such that it can be screwed on with the socket installed
+
+
+### Changes to Printed Parts
+- [CCP-04](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_center_plate.STL)
+- [z Thrust Bearing Spacer](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/z_thrust_bearing_spacer.STL)
+- [SGC-02](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/spring_guide_capture.STL)
+- [PSH-02](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/psu_socket_holder.STL)
+
+- Taller Feet
+  - [FLF-05](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/front_left_foot.STL)
+  - [FRF-05](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/front_right_foot.STL)
+  - [BLF-05](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/back_left_foot.STL)
+  - [BRF-05](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/frame/back_right_foot.STL)
+
+- REL Parts
+  - StepperOnline [Motor Clip](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchanger_locking_mechanism/stepper_online/lock_actuator_motor_clip.STL)
+  - StepperOnline Base Plate [RLB-10S](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchanger_locking_mechanism/stepper_online/lock_actuator_base_plate.STL)
+  - LDO [Motor Clip](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchanger_locking_mechanism/lock_actuator_motor_clip.STL)
+  - LDO Base Plate [RLB-10](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchanger_locking_mechanism/lock_actuator_base_plate.STL)
+  - [Fixed Pulley](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchanger_locking_mechanism/fixed_half_pulley.STL)
+
+### Shopping List Changes
+- -1 M5 Drop-in T Nut
+- -1 M5 8mm Buttonhead Screw
+- +3 5.08mm ID thrust bearings for Z axis
+
 ## rel/jubilee 2.1.0 - May 29, 2020 
+
 - The toolchanger now uses either an LDO Motor or the original StepperOnline motor. You must print the motor clip and base plate pertaining to the motor you have.
 - The Remote Elastic Lock now uses an actual spring instead of cut spring guide
     - 1000 were made in China and distributed to various Jubilee part resellers

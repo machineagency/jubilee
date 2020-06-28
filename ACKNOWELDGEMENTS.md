@@ -44,4 +44,5 @@ Jubilee is made possible through monetary support and donations from
 * @VinnyCordeiro on Discord for contributing a massive list of laser cutting services to the wiki
 * @MiasmicTruth on Discord for live assembly videos and continuous assembly instruction feedback
 * @Bryan H. on Discord for part numbering scheme suggestions and printed part fabrication suggestions
-* @Enza3D on Discord for part numbering scheme suggestions 
+* @Enza3D on Discord for part numbering scheme suggestions
+* @RexOrient on Discord for Duet3 Wiring Diagrams 

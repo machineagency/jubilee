@@ -1,4 +1,4 @@
-Jubilee V2.1.0
+Jubilee V2.1.1
 =======
 
 Jubilee is an open-source, extensible multi-tool motion platform capable of running GCode for non-loadbearing automation applications.
