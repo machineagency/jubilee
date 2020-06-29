@@ -40,6 +40,7 @@ All changes between releases are tracked here.
 - -1 M5 Drop-in T Nut
 - -1 M5 8mm Buttonhead Screw
 - +3 5.08mm ID thrust bearings for Z axis
+- -6 M5, 10mm OD Shim
 
 ## rel/jubilee 2.1.0 - May 29, 2020 
 
