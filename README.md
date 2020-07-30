@@ -26,6 +26,12 @@ The best way to get started is to thumb through the [**Assembly Instructions**](
 
 Then head over to the [**Wiki**](https://jubilee3d.com/index.php?title=Main_Page) to start gathering tools and deciding which parts to buy and which parts to make.
 
+### Downloading
+There are 3 ways to work with the Jubilee source files: with and without history.
+To download the latest stable release without history, head to the [Releases](https://github.com/machineagency/jubilee/releases) page and download the latest release.
+To download the latest stable release with history and track updates, clone the project with the "Code" button above and switch to the corresponding branch.
+To download the latest stable release with history and submit additions back to the main project, create a "Fork" of the project with the button in the upper right. Then switch to the corresponding release branch in your fork of the project.
+
 ## Repository Contents
 The Repository is broken into three main chunks:
 * **frame** contains all design content related to the Jubilee frame
