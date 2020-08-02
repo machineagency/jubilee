@@ -3,12 +3,15 @@
 All changes between releases are tracked here.
 
 
-## rel/jubilee 2.1.2 - July 29, 2020
+## rel/jubilee 2.1.2 - Aug 1, 2020
 - Injection Molded Delrin Wedge Plates are now the standard for designing tool plates. Fixes [Issue #43](https://github.com/machineagency/jubilee/issues/43)
 - Side and Back Panels for the frame are now available in HDPE from Filastruder. They are line items in the BOM.
 - Added DXFs of Side and Back Panels to the machineable parts folder. These variants are router-friendly with the inclusion of Dogbone Fillets on inside corners for machining with up to a 3.175mm (1/8th in.) diameter endmill.
 - Tool Change Macros have been rewritten for more general use cases.
   - Tool Change Macros restore the Z height before pulling out the tool. This prevents tools from crashing into the bed when changing from a short to a tall tool.
+- Parking Post Part Number Corrected. The XX in PPBXX-04 and THXX-04 now reflect the dowel pin center-to-center distance.
+  - PPB47-04 and TH47-04 regenerated, which are the correct parking post files for the pen tool.
+  - PPB55-04 and TH55-04 created, which are the correct parking post files for the default extruder.
 
 ### Shopping List Changes
 - Online Metals is now no longer a required supplier for frame components.
