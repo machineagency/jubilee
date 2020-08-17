@@ -5,6 +5,7 @@ All changes between releases are tracked here.
 
 ## rel/jubilee 2.1.2 - Aug 17, 2020
 - Injection Molded Delrin Wedge Plates are now the standard for designing tool plates. Fixes [Issue #43](https://github.com/machineagency/jubilee/issues/43)
+  - added injection molding specs sheet and STEP file with draft angles.
 - Side and Back Panels for the frame are now available in HDPE from Filastruder. They are line items in the BOM.
 - Added DXFs of Side and Back Panels to the machineable parts folder. These variants are router-friendly with the inclusion of Dogbone Fillets on inside corners for machining with up to a 3.175mm (1/8th in.) diameter endmill.
 - Tool Change Macros have been rewritten for more general use cases.
