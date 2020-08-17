@@ -9,6 +9,7 @@ All changes between releases are tracked here.
 - Added DXFs of Side and Back Panels to the machineable parts folder. These variants are router-friendly with the inclusion of Dogbone Fillets on inside corners for machining with up to a 3.175mm (1/8th in.) diameter endmill.
 - Tool Change Macros have been rewritten for more general use cases.
   - Tool Change Macros restore the Z height before pulling out the tool. This prevents tools from crashing into the bed when changing from a short to a tall tool.
+- config.g machine XY origin adjusted to reflect the documentation. (It was off by a couple mm.) Fixes [Issue #88](https://github.com/machineagency/jubilee/issues/88)
 - Parking Post Part Number Corrected. The XX in PPBXX-04 and THXX-04 now reflect the dowel pin center-to-center distance.
   - PPB47-04 and TH47-04 regenerated, which are the correct parking post files for the pen tool.
   - PPB55-04 and TH55-04 created, which are the correct parking post files for the default extruder.
