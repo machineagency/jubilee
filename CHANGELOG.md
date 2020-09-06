@@ -76,6 +76,9 @@ All changes between releases are tracked here.
 - Added Frame Wiring Diagram and Default Extruder Tool Wiring Diagram
 - Z-axis motors now have two stacked shims instead of one to reduce wear on the coupler
 - Remote Elastic Lock redesign and compatible with both StepperOnline and LDO motor options
+- Wiring Diagram
+  - fixing toolchanger motor wiring color
+  - changing Duex5 power wire gauge from 16 AWG to 16-20 AWG
 
 ### Changes to Printed Parts
 - Printed Pulley Spacer can now be clipped in after-the-fact to ensure shims were installed correctly beforehand.

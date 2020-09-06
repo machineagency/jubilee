@@ -16,7 +16,7 @@ While this repository contains all the design-related content needed to build a 
 * 409mm of horizontal tool rack space
 * kinematically coupled bed plate
 * autotramming with 3-point bed-leveling
-* ~$1540 for a single unit, not including tools. See the [BOM][bom] for the part breakdown
+* ~$1405 for a single unit, not including tools. See the [BOM][bom] for the part breakdown
 * User Extensible! We encourage extending the design to custom applications via custom tools and bed plates
 * Full specs listed on [this wiki page](https://jubilee3d.com/index.php?title=Specs)
 
