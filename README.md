@@ -64,6 +64,9 @@ Jubilee was designed with love by [Joshua Vasquez](http://www.doublejumpelectric
 ### Press and Outside Resources
 
 Read more about the history of Jubilee on [Hackaday](https://hackaday.com/2019/11/14/jubilee-a-toolchanging-homage-to-3d-printer-hackers-everywhere/), or, for the patient, check out this (1hr) [talk](https://www.youtube.com/watch?v=7fz2UHHxe5o&t=119s) given in Jan 2020.
+For more community takes, have a look at:
+* [Hackster.io](https://www.hackster.io/news/jubilee-is-an-open-source-motion-platform-that-allows-for-multi-tool-fabrication-213881ee3ce1)
+* [3D Distributed](https://3ddistributed.com/best-corexy-3d-printer-2020/)
 
 ### Open Source
 Jubilee is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License][cc-by] (CC BY-SA 3.0).

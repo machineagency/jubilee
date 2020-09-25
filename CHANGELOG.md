@@ -10,16 +10,27 @@ All changes between releases are tracked here.
 - Added DXFs of Side and Back Panels to the machineable parts folder. These variants are router-friendly with the inclusion of Dogbone Fillets on inside corners for machining with up to a 3.175mm (1/8th in.) diameter endmill.
 - Tool Change Macros have been rewritten for more general use cases.
   - Tool Change Macros restore the Z height before pulling out the tool. This prevents tools from crashing into the bed when changing from a short to a tall tool.
-- config.g machine XY origin adjusted to reflect the documentation. (It was off by a couple mm.) Fixes [Issue #88](https://github.com/machineagency/jubilee/issues/88)
 - Parking Post Part Number Corrected. The XX in PPBXX-04 and THXX-04 now reflect the dowel pin center-to-center distance.
   - PPB47-04 and TH47-04 regenerated, which are the correct parking post files for the pen tool.
-  - PPB55-04 and TH55-04 created, which are the correct parking post files for the default extruder.
+  - PPB55-05 and TH55-05 created, which are the correct parking post files for the default extruder.
 - Logo added to the main repository, courtesy of @troll on Discord
+- Parking Post geometry updated for stiffness. It now uses a dovetail feature inspired by @Mr. Hobbit on Discord.
+  - M3 8mm screws have been replaced with M3 10mm screws.
+  - Instructions updated to reflect the new parking post geometry.
+  
+### Config Changes
+- config.g machine XY origin adjusted to reflect the documentation. (It was off by a couple mm.) Fixes [Issue #88](https://github.com/machineagency/jubilee/issues/88)
+- XY Motor current has been increased to 2405mA. This is 85% of the peak current limit. (Note that LDO motor current limits are listed as *root mean square* not *peak* current values in the datasheet, so the *peak* current limit is 2829mA.)
 
 ### Shopping List Changes
 - Online Metals is now no longer a required supplier for frame components.
   - Side panel raw material has been replaced with three already-machined side panels from Filastruder.
-
+- Default Extruder
+  - +4 5mm ID, 9mm OD O-rings
+- Parking Post
+  - -2 M3, 8mm Buttonhead Screws
+  - +2 M3, 10mm Buttonhead Screws
+  
 ## rel/jubilee 2.1.1 - June 27, 2020
 
 - REL Changes/Updates
