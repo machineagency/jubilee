@@ -1,9 +1,9 @@
-	; Home Z Axis
-	M561 ; Disable any Mesh Bed Compensation
-	G90 G1 X150 Y150 F10000 ; Move to the center of the bed
-	M558 F500 ; Set the probing speed
-	G30
-	M558 F50 ; Set a slower probing speed
-	G30
-	G32                         ; Run 3-point bed calibration defined in bed.g
-	G29 S1   ; Enable Mesh Bed Compensation
+; Home Y Axis
+
+G91                     ; Set relative mode
+;G1 Y-999 F6000 H1		; Big negative move to search for endstop
+G1 Y-999 F3500 H1		; Big negative move to search for endstop
+G1 Y4 F600				; Back off the endstop
+G1 Y-10 F600 H1         ; Find endstop again slowly
+G90                     ; Set absolute mode
+G1 Y0 F6000
