@@ -3,28 +3,41 @@
 All changes between releases are tracked here.
 
 
-## rel/jubilee 2.1.2 - Sept 25, 2020
+## rel/jubilee 2.1.2 - Sept 29, 2020
 - Injection Molded Delrin Wedge Plates are now the standard for designing tool plates. Fixes [Issue #43](https://github.com/machineagency/jubilee/issues/43)
   - added injection molding specs sheet and STEP file with draft angles.
+- Logo added to a [folder](https://github.com/machineagency/jubilee/tree/master/logo) in the main repository, courtesy of @troll on Discord
 - Side and Back Panels for the frame are now available in HDPE from Filastruder. They are line items in the BOM.
-- Added DXFs of Side and Back Panels to the machineable parts folder. These variants are router-friendly with the inclusion of Dogbone Fillets on inside corners for machining with up to a 3.175mm (1/8th in.) diameter endmill.
-- Tool Change Macros have been rewritten for more general use cases.
-  - Tool Change Macros restore the Z height before pulling out the tool. This prevents tools from crashing into the bed when changing from a short to a tall tool.
+- The Carriage Pulley now has an extra square nut to better resist plastic fatigue when screwed onto the Twist Lock.
+- Added DXFs of Side and Back Panels to the [machineable parts folder](https://github.com/machineagency/jubilee/tree/master/frame/fabrication_exports/machined_parts/panels). These variants are router-friendly with the inclusion of Dogbone Fillets on inside corners for machining with up to a 3.175mm (1/8th in.) diameter endmill.
 - Parking Post Part Number Corrected. The XX in PPBXX-04 and THXX-04 now reflect the dowel pin center-to-center distance.
   - PPB47-04 and TH47-04 regenerated, which are the correct parking post files for the pen tool.
   - PPB55-05 and TH55-05 created, which are the correct parking post files for the default extruder.
-- Logo added to the main repository, courtesy of @troll on Discord
 - Parking Post geometry updated for stiffness. It now uses a dovetail feature inspired by @Mr. Hobbit on Discord.
   - M3 8mm screws have been replaced with M3 10mm screws.
   - Instructions updated to reflect the new parking post geometry.
   
-### Config Changes
+## Default Extruder Changes
+- Replaced Delrin Compression Flexure with O-Rings. These are easier to source than a custom laser-cut Delrin part, but the old Delrin piece is still a viable option.
+  - O-Rings should get a teeny bit of grease. (The same stuff as the leadscrews will work.)
+- Tool Wings stick out an extra 5mm. The "pre-park" position has been backed off to 295mm in Y in the tool change macros to account for the extra distance. Overall build volume is unchanged.
+  
+### Config/Macro Changes
 - config.g machine XY origin adjusted to reflect the documentation. (It was off by a couple mm.) Fixes [Issue #88](https://github.com/machineagency/jubilee/issues/88)
-- XY Motor current has been increased to 2405mA. This is 85% of the peak current limit. (Note that LDO motor current limits are listed as *root mean square* not *peak* current values in the datasheet, so the *peak* current limit is 2829mA.)
+- XY Motor current has been increased to 2263mA. This is 80% of the peak current limit. (Note that LDO motor current limits are listed as *root mean square* not *peak* current values in the datasheet, so the *peak* current limit is 2829mA.)
+- Tool Change Macros have been rewritten for more general use cases.
+  - Tool Change Macros restore the Z height before pulling out the tool. This prevents tools from crashing into the bed when changing from a short to a tall tool.
+
+### Changes to Printed Parts
+- Carriage Pulley, [CPL-02](https://github.com/machineagency/jubilee/blob/master/frame/fabrication_exports/3d_printed_parts/toolchanger/toolchange_carriage/carriage_pulley.STL)
 
 ### Shopping List Changes
 - Online Metals is now no longer a required supplier for frame components.
   - Side panel raw material has been replaced with three already-machined side panels from Filastruder.
+- Carriage Pulley Assembly
+  - -1 M3, 8mm set screw
+  - +1 M3, 10mm set screw
+  - +1 M3 Square Nut
 - Default Extruder
   - +4 5mm ID, 9mm OD O-rings
 - Parking Post
