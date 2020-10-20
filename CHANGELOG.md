@@ -5,6 +5,8 @@ All changes between releases are tracked here.
 ## In Progress: rel/jubilee 2.1.3 - Oct, 2020
 - Back Z Motor Plate (BZP-04)
   - Added 1mm of height to where motor attaches to be consistent with the other two Z Motor Plates
+- bed.g
+  - disabling mesh compensation at the beginning and re-enabling at the end. This is a precaution in case bed.g is called as a standalone macro. homez.g already disables mesh compensation before calling bed.g.
 
 ## rel/jubilee 2.1.2 - Sept 29, 2020
 - Injection Molded Delrin Wedge Plates are now the standard for designing tool plates. Fixes [Issue #43](https://github.com/machineagency/jubilee/issues/43)
