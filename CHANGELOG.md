@@ -5,6 +5,8 @@ All changes between releases are tracked here.
 ## In Progress: rel/jubilee 2.1.3 - Oct, 2020
 - Back Z Motor Plate (BZP-04)
   - Added 1mm of height to where motor attaches to be consistent with the other two Z Motor Plates
+- M3 Slide-in T-Nuts
+  - Replaced with [Stamped M3 Slide In T-Nuts](https://www.aliexpress.com/item/32803077280.html) which are consistently better quality from Aliexpress.
 - bed.g
   - disabling mesh compensation at the beginning and re-enabling at the end. This is a precaution in case bed.g is called as a standalone macro. homez.g already disables mesh compensation before calling bed.g.
 
