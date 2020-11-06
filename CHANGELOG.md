@@ -2,7 +2,13 @@
 
 All changes between releases are tracked here.
 
-## In Progress: rel/jubilee 2.1.3 - Oct, 2020
+## In Progress: rel/jubilee 2.1.3 - Nov 2020
+- More Permissive License!
+  - Jubilee is licensed under Creative Commons 4.0 International License
+  - Dropping the former "Share-Alike" restriction
+- Adding Duet2 + Duex5 RepRapFirmware 3+ Configuration
+- Leadscrew Retainers have been removed
+  - As is, they were overconstraining the z axis screws.
 - Back Z Motor Plate (BZP-04)
   - Added 1mm of height to where motor attaches to be consistent with the other two Z Motor Plates
 - M3 Slide-in T-Nuts

@@ -1,7 +1,7 @@
 Jubilee (c) by Joshua Vasquez
 
 Jubilee is licensed under a
-Creative Commons Attribution-ShareAlike 3.0 Unported License.
+Creative Commons Attribution Attribution 4.0 International License.
 
 You should have received a copy of the license along with this
-work.  If not, see <http://creativecommons.org/licenses/by-sa/3.0/>.
+work. If not, see <http://creativecommons.org/licenses/by/4.0/>.
