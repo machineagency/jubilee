@@ -2,7 +2,7 @@
 
 All changes between releases are tracked here.
 
-## In Progress: rel/jubilee 2.1.3 - Nov 2020
+## In Progress: rel/jubilee 2.2.0 - Nov 2020
 - More Permissive License!
   - Jubilee is licensed under Creative Commons 4.0 International License
   - Dropping the former "Share-Alike" restriction
@@ -12,7 +12,7 @@ All changes between releases are tracked here.
   - All M3 Slide-in T Nuts (used for connecting MGN12 rail to the 2020 extrusions) have been replaced with [Stamped M3 Slide In T-Nuts](https://www.aliexpress.com/item/32803077280.html) which are consistently better quality from Aliexpress
   - The process of squaring the outer frame makes better use of the Machinist Blocks, which means...
   - The 8x outer_frame_squaring_plate.STLs are no longer needed.
-- Adding a RepRapFirmware 3+ Configuration for Duet2 + Duex5 boards
+- Adding a RepRapFirmware 3+ Config Files for Duet2 + Duex5 boards
 - Leadscrew Retainers have been removed
   - As is, they were overconstraining the z axis screws.
 - Back Z Motor Plate (BZP-04)
