@@ -17,6 +17,8 @@ All changes between releases are tracked here.
   - As is, they were overconstraining the z axis screws.
 - Back Z Motor Plate (BZP-04)
   - Added 1mm of height to where motor attaches to be consistent with the other two Z Motor Plates
+- Front Left and Right Z Motor Plate (LZP-04, RZP-04)
+  - Opened up M5 Screw Holes to 5.8mm to prevent collision of Slide-In TNut with Inside Corner Bracket 
 
 - bed.g
   - disabling mesh compensation at the beginning and re-enabling at the end. This is a precaution in case bed.g is called as a standalone macro. homez.g already disables mesh compensation before calling bed.g.
