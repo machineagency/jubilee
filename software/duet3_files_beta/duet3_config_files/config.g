@@ -94,9 +94,10 @@ M350 E16:16 I1         ; 16x microstepping for Extruder axes. Use interpolation.
 M201 X1100 Y1100                        ; Accelerations (mm/s^2)
 M201 Z100                               ; LDO ZZZ Acceleration
 M201 U800                               ; LDO U Accelerations (mm/s^2)
+M201 E1300                              ; Extruder
 
 M203 X18000 Y18000 Z1600 E8000 U9000    ; Maximum axis speeds (mm/min)
-M566 X1000 Y1000 Z500 E3000 U50         ; Maximum jerk speeds (mm/min)
+M566 X500 Y500 Z500 E3000 U50         ; Maximum jerk speeds (mm/min)
 
 ; Endstops and probes 
 ;-------------------------------------------------------------------------------
