@@ -2,9 +2,26 @@
 
 All changes between releases are tracked here.
 
-## In Progress: rel/jubilee 2.1.3 - Oct, 2020
+## In Progress: rel/jubilee 2.2.0 - Nov 2020
+- More Permissive License!
+  - Jubilee is licensed under Creative Commons 4.0 International License
+  - Dropping the former "Share-Alike" restriction
+- Massive Frame Assembly Instruction Overhaul
+  - All M5 Drop-in T Nuts have been replaced with M5 Stamped Slide-in T Nuts. The former do not always seat properly into the extrusion when they are being installed.
+  - Frame assembly instructions have been totally revamped to pre-load Slide-in T Nuts during assembly.
+  - All M3 Slide-in T Nuts (used for connecting MGN12 rail to the 2020 extrusions) have been replaced with [Stamped M3 Slide In T-Nuts](https://www.aliexpress.com/item/32803077280.html) which are consistently better quality from Aliexpress
+  - The process of squaring the outer frame makes better use of the Machinist Blocks, which means...
+  - The 8x outer_frame_squaring_plate.STLs are no longer needed.
+- Adding a RepRapFirmware 3+ Config Files for Duet2 + Duex5 boards
+- Leadscrew Retainers have been removed
+  - As is, they were overconstraining the z axis screws.
 - Back Z Motor Plate (BZP-04)
   - Added 1mm of height to where motor attaches to be consistent with the other two Z Motor Plates
+- Front Left and Right Z Motor Plate (LZP-04, RZP-04)
+  - Opened up M5 Screw Holes to 5.8mm to prevent collision of Slide-In TNut with Inside Corner Bracket 
+
+- bed.g
+  - disabling mesh compensation at the beginning and re-enabling at the end. This is a precaution in case bed.g is called as a standalone macro. homez.g already disables mesh compensation before calling bed.g.
 
 ## rel/jubilee 2.1.2 - Sept 29, 2020
 - Injection Molded Delrin Wedge Plates are now the standard for designing tool plates. Fixes [Issue #43](https://github.com/machineagency/jubilee/issues/43)
