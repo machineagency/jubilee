@@ -6,12 +6,12 @@
 
 G92 U0                  ; Define current position as 0 to enable move without homing
 G1 U2 H2 F5000          ; Move the axis 2deg to back it off of the unlocked switch
-G1 U170 H1 F5000        ; Move the axis to 170deg, or until it hits an endstop
+G1 U145 H1 F5000        ; Move the axis to 145deg, or until it hits an endstop
 M400                    ; Wait for the command buffer to drain before checking model
 
-if abs(move.axes[3].userPosition - 170) > 1
+if {abs((move.axes[3].userPosition - 145))} > 1
     M84 U
-    M291 R"Intervention Required" P"A tool has been detected! Please remove and return to post." S2
+    M291 R"Intervention Required" P"A tool has been detected! Please remove and return to post." S3
 
 G91                     ; Set relative mode
 G1 U-360 F9000 H1       ; Big negative move to search for home endstop
@@ -19,3 +19,4 @@ G1 U6 F600              ; Back off the endstop
 G1 U-15 F600 H1         ; Find endstop again slowly
 G90                     ; Set absolute mode
 T-1 P0                  ; Set current tool to none
+
