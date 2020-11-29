@@ -7,7 +7,7 @@
 G92 U0                  ; Define current position as 0 to enable move without homing
 G1 U2 H2 F5000          ; Move the axis 2deg to back it off of the unlocked switch
 G1 U170 H1 F5000        ; Move the axis to 170deg, or until it hits an endstop
-M400                    ; Make sure movement is done, probably unneccessary
+M400                    ; Wait for the command buffer to drain before checking model
 
 if abs(move.axes[3].userPosition - 170) > 1
     M84 U
