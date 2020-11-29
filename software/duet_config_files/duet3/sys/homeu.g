@@ -18,3 +18,4 @@ G1 U-360 F9000 H1       ; Big negative move to search for home endstop
 G1 U6 F600              ; Back off the endstop
 G1 U-15 F600 H1         ; Find endstop again slowly
 G90                     ; Set absolute mode
+T-1 P0                  ; Set current tool to none
