@@ -12,7 +12,7 @@ M400                    ; Make sure moves are complete
 
 if abs(move.axes[3].userPosition - 170) > 1
     M84 U
-    M291 R"Intervention Required" P"Please remove the tool, return it to its post, and restore the twist lock to its unlocked (horizontal) position. Press OK to continue..." S2
+    M291 R"Intervention Required" P"Please remove the tool, return it to its post, and restore the twist lock to its unlocked (horizontal) position. Press OK to continue..." S3
 T-1 P0                  ; Set current tool to none
 
 G91                     ; Set relative mode
