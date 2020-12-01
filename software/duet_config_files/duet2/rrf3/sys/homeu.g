@@ -13,6 +13,7 @@ M400                    ; Make sure moves are complete
 if abs(move.axes[3].userPosition - 170) > 1
     M84 U
     M291 R"Intervention Required" P"A tool has been detected! Please remove and return to post. Press OK to continue..." S2
+T-1 P0                  ; Set current tool to none
 
 G91                     ; Set relative mode
 G1 U-360 F9000 H1       ; Big negative move to search for home endstop
