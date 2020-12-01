@@ -7,10 +7,10 @@
 G90                     ; Set absolute mode
 G92 U0                  ; Define current position as 0 to enable move without homing
 G1 U2 H2 F5000          ; Move the axis 2deg to back it off of the unlocked switch
-G1 U160 H1 F5000        ; Move the axis to 170deg, or until it hits an endstop
+G1 U120 H1 F5000        ; Move the axis to 170deg, or until it hits an endstop
 M400                    ; Make sure moves are complete
 
-if abs(move.axes[3].userPosition - 160) > 1
+if abs(move.axes[3].userPosition - 120) > 1
     M84 U
     M291 R"Intervention Required" P"Please remove the tool, return it to its post, and restore the twist lock to its unlocked (horizontal) position. Press OK to continue..." S3
 T-1 P0                  ; Set current tool to none
