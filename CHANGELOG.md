@@ -39,6 +39,8 @@ All changes between releases are tracked here.
 - Stamped TNut Backing Springs
 - Keenovo Silicone Heated Pad Part Number Substitute
   - Replaced original Bed Heater with the one that includes a built-in 150C thermal cutoff for $3 more.
+- Default BMG Extruder Shopping List
+  - [Metal Tool Plates](https://shop.guildtek.com/index.php?main_page=product_info&cPath=1&products_id=4) available from Guildtek are now the default. These do not warp like the plastic ones do. Fixes [Issue #26](https://github.com/machineagency/jubilee/issues/26).
   
 
 ## rel/jubilee 2.1.2 - Sept 29, 2020
