@@ -2,7 +2,7 @@
 
 All changes between releases are tracked here.
 
-## rel/jubilee 2.2.0 - Nov 20, 2020
+## rel/jubilee 2.2.0 - Dec 2, 2020
 - More Permissive License!
   - Jubilee is licensed under Creative Commons 4.0 International License
   - Dropping the former "Share-Alike" restriction
