@@ -44,7 +44,7 @@ M569 P2 S0                  ; Drive 2 | U Tool Changer Lock  670mA
 M906 U{0.7*sqrt(2)*670} I60 ; 70% of 670mA RMS idle 60%
                             ; Note that the idle will be shared for all drivers
 
-M569 P3 S0                ; Drive 3 | Front Left Z  1680mA
+M569 P3 S0                ; Drive 3 | Front Left Z
 M569 P4 S0                ; Drive 4 | Front Right Z
 M569 P5 S0                ; Drive 5 | Back Z
 M906 Z{0.7*sqrt(2)*1680}  ; 70% of 1680mA RMS
@@ -97,7 +97,7 @@ M201 U800                               ; LDO U Accelerations (mm/s^2)
 M201 E1300                              ; Extruder
 
 M203 X18000 Y18000 Z1600 E8000 U9000    ; Maximum axis speeds (mm/min)
-M566 X500 Y500 Z500 E3000 U50         ; Maximum jerk speeds (mm/min)
+M566 X500 Y500 Z500 E3000 U50           ; Maximum jerk speeds (mm/min)
 
 ; Endstops and probes 
 ;-------------------------------------------------------------------------------
