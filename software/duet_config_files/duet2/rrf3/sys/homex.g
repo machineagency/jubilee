@@ -5,7 +5,8 @@
 ; (2) Y axis is homed (to prevent collisions with the tool posts)
 ; (3) Y axis is in a safe position (see 2)
 ; (4) No tools are loaded.
-; Ask for user-intervention if either case fails.
+; (5) Endstop is not already triggered (in case of damaged endstop)
+; Ask for user-intervention if any case fails.
 
 G90                     ; Set absolute mode
 
@@ -24,6 +25,10 @@ if state.currentTool != -1
   M84 U
   M291 R"Cannot Home X" P"Tool must be deselected before homing. U has been unlocked, please manually dock tool and press OK to continue or Cancel to abort" S3
   G28 U
+  
+if sensors.endstops[0].triggered
+  M291 "Cannot Home X" P"X Endstop is already triggered!" S2
+  abort "X Endstop was triggered before homing."
 
 G91                     ; Set relative mode
 G1 X-330 F6000 H1       ; Big negative move to search for endstop

@@ -1,5 +1,12 @@
 ; Home Z Axis
 
+; In case homez.g is called in isolation, ensure 
+; (1) U axis is homed (which performs tool detection and sets machine tool state to a known state) and 
+; (2) X&Y axis is homed (to prevent collisions with the tool posts)
+; (3) No tools are loaded.
+; (4) Endstop is not already triggered (in case of damaged endstop)
+; Ask for user-intervention if any case fails.
+
 if !move.axes[3].homed
   M291 R"Cannot Home Z" P"U axis must be homed before Z to prevent damage to tool. Press OK to home U or Cancel to abort" S3
   G28 U
@@ -13,6 +20,10 @@ if state.currentTool != -1
   M84 U
   M291 R"Cannot Home Z" P"Tool must be deselected before homing. U has been unlocked, please manually dock tool and press OK to continue or Cancel to abort" S3
   G28 U
+
+if sensors.probes[0].value[0] != 0
+  M291 R"Cannot Home Z" P"Z Probe is already triggered!" S2
+  abort "Z Probe was triggered before homing."
 
 M561 ; Disable any Mesh Bed Compensation
 G90 G1 X150 Y150 F10000 ; Move to the center of the bed
