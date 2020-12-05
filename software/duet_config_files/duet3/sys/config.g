@@ -26,11 +26,15 @@ M83                        ; ...but relative extruder moves
 
 ; Stepper mapping
 ;-------------------------------------------------------------------------------
+; Connected to the MB6HC as the table below.
+; Note: first row is numbered left to right and second row right to left
+; _________________________________
+; | X(Right) | Y(Left)  | U(lock) |
+; | Z(Back)  | Z(Right) | Z(Left) |
+
 M584 X0 Y1                ; X and Y for CoreXY
 M584 U2                   ; U for toolchanger lock
 M584 Z3:4:5               ; Z has three drivers for kinematic bed suspension. 
-
-M584 E1.0:1.1             ; Extruders for two tools on expansion board address 1 
 
 M569 P0 S0                ; Drive 0 | X stepper
 M569 P1 S0                ; Drive 1 | Y Stepper
@@ -49,10 +53,13 @@ M569 P4 S0                ; Drive 4 | Front Right Z
 M569 P5 S0                ; Drive 5 | Back Z
 M906 Z{0.7*sqrt(2)*1680}  ; 70% of 1680mA RMS
 
-; Expansion 0
+; Expansion 1
+; Tool steppers on expansion board (adapt this to your own set up)
+M584 E1.0:1.1             ; Extruders for two tools on expansion board address 1
 M569 P1.0 S0 D2           ; Drive 6 | Extruder T0 1400mA Spreadcycle Mode
 M569 P1.1 S0 D2           ; Drive 7 | Extruder T1 1400mA Spreadcycle Mode
 M906 E1400                ; {0.7*sqrt(2)*1400} 70% of 1400mA
+                          ; E don't support expressions in 3.2.0-beta4
 
 
 M569 P3 S0 D2             ; Drive 3 direction | Extruder 0 in Spreadcycle Mode
@@ -99,8 +106,15 @@ M201 E1300                              ; Extruder
 M203 X18000 Y18000 Z1600 E8000 U9000    ; Maximum axis speeds (mm/min)
 M566 X500 Y500 Z500 E3000 U50           ; Maximum jerk speeds (mm/min)
 
+
+
 ; Endstops and probes 
 ;-------------------------------------------------------------------------------
+; Connected to the MB6HC as the table below.
+; | U | Z |
+; | X |
+; | Y |
+
 M574 U1 S1 P"^io0.in"  ; homing position U1 = low-end, type S1 = switch
 M574 X1 S1 P"^io1.in"  ; homing position X1 = low-end, type S1 = switch
 M574 Y1 S1 P"^io2.in"  ; homing position Y1 = low-end, type S1 = switch
@@ -118,7 +132,7 @@ M208 U0:200            ; Set Elastic Lock (U axis) max rotation angle
 
 
 
-; Heaters and thermistors
+; Heaters and temperature sensors
 ;-------------------------------------------------------------------------------
 
 ; Bed
@@ -132,7 +146,8 @@ M307 H0 A589.8 C589.8 D2.2 V24.1 B0 ; Keenovo 750w 230v built in thermistor
 M140 H0                             ; Assign H0 to the bed
 
 
-; Tool
+; Tools
+; Heaters and sensors must be wired to main board for PID tuning (3.2.0-beta4)
 M308 S1 P"spi.cs1" Y"rtd-max31865" A"Heater0" ; PT100 on main board
 M950 H1 C"0.out3" T1                      ; Heater for extruder out tool 0
 ; M307 H1 A1252.3 C361.3 D5.3 V24.0 B0    ; from pid tuning without sock
@@ -152,17 +167,15 @@ M106 P5 C"PrintCool0"
 
 ; Tool definitions
 ;-------------------------------------------------------------------------------
-; Expansion 0
 M563 P0 S"Tool 0" D0 H1 F5  ; Px = Tool number
                             ; Dx = Drive Number
                             ; H1 = Heater Number
                             ; Fx = Fan number print cooling fan
 G10  P0 S0 R0               ; Set tool 0 operating and standby temperatures
-                            ;(-273 = "off")
+                            ; (-273 = "off")
 M572 D0 S0.085              ; Set pressure advance
 
-M98  P"/sys/Toffsets.g"     ; Set tool offsets from the bed. In separate file so
-                            ; test macro can invoke. 
+M98  P"/sys/Toffsets.g"     ; Set tool offsets from the bed
 
 
 M501                        ; Load saved parameters from non-volatile memory
