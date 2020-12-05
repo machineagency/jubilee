@@ -11,11 +11,11 @@ G90                     ; Set absolute mode
 
 if !move.axes[3].homed
   M291 R"Cannot Home X" P"U axis must be homed before X to prevent damage to tool. Press OK to home U or Cancel to abort" S3
-  G28 U
+  M98 P"homeu.g"
 
 if !move.axes[1].homed
   M291 R"Cannot Home X" P"Y axis must be homed before x to prevent damage to tool. Press OK to home Y or Cancel to abort" S3
-  G28 Y
+  M98 P"homey.g"
   
 if move.axes[1].userPosition >= 305
   G0 Y305 F20000       ; Rapid to safe y position
@@ -23,7 +23,7 @@ if move.axes[1].userPosition >= 305
 if state.currentTool != -1
   M84 U
   M291 R"Cannot Home X" P"Tool must be deselected before homing. U has been unlocked, please manually dock tool and press OK to continue or Cancel to abort" S3
-  G28 U
+  M98 P"homeu.g"
   
 G91                     ; Relative mode
 G1 H2 Z5 F5000          ; Lower the bed
