@@ -103,7 +103,7 @@ M201 Z100                               ; LDO ZZZ Acceleration
 M201 U800                               ; LDO U Accelerations (mm/s^2)
 M201 E1300                              ; Extruder
 
-M203 X18000 Y18000 Z1600 E8000 U9000    ; Maximum axis speeds (mm/min)
+M203 X18000 Y18000 Z800 E8000 U9000     ; Maximum axis speeds (mm/min)
 M566 X500 Y500 Z500 E3000 U50           ; Maximum jerk speeds (mm/min)
 
 
@@ -174,6 +174,9 @@ M563 P0 S"Tool 0" D0 H1 F5  ; Px = Tool number
 G10  P0 S0 R0               ; Set tool 0 operating and standby temperatures
                             ; (-273 = "off")
 M572 D0 S0.085              ; Set pressure advance
+
+M563 P1 S"Tool 1"
+
 
 M98  P"/sys/Toffsets.g"     ; Set tool offsets from the bed
 

@@ -1,5 +1,5 @@
 ; tfree0.g
-; Runs at the start of a toolchange if the current tool is tool1.
+; Runs at the start of a toolchange if the current tool is tool-0.
 ; Note: tool offsets are applied at this point unless we preempt commands with G53!
 
 G91                          ; Relative Mode.
