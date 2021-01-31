@@ -2,6 +2,9 @@
 
 All changes between releases are tracked here.
 
+## upcoming rel/jubilee 2.2.1 - Feb (?)
+- The four M3 12mm screws on the front carriage have been swapped for the four M3 10mm screws on the back Z axis. Screw count did not change.
+
 ## rel/jubilee 2.2.0 - Dec 2, 2020
 - More Permissive License!
   - Jubilee is licensed under Creative Commons 4.0 International License
