@@ -16,7 +16,7 @@ While this repository contains all the design-related content needed to build a 
 * 409mm of horizontal tool rack space
 * kinematically coupled bed plate
 * autotramming with 3-point bed-leveling
-* ~$1405 for a single unit, not including tools. See the [BOM][bom] for the part breakdown
+* ~$1350 for a single unit, not including tools. See the [BOM][bom] for the part breakdown
 * User Extensible! We encourage extending the design to custom applications via custom tools and bed plates
 * Full specs listed on [this wiki page](https://jubilee3d.com/index.php?title=Specs)
 
@@ -69,11 +69,11 @@ For more community takes, have a look at:
 * [3D Distributed](https://3ddistributed.com/best-corexy-3d-printer-2020/)
 
 ### Open Source
-Jubilee is licensed under a [Creative Commons Attribution-ShareAlike 3.0 Unported License][cc-by] (CC BY-SA 3.0).
+Jubilee is licensed under a [Creative Commons Attribution 3.0 Unported License][cc-by] (CC BY 3.0).
 [![CC BY 3.0][cc-by-image]][cc-by]
 
 [bom]: https://docs.google.com/spreadsheets/d/1pRzBQxVzL9c4T9b1RrKvSjlSwJJhJ7NcbSV6iJUv0X0/edit#gid=0
-[cc-by]: https://creativecommons.org/licenses/by-sa/3.0/
-[cc-by-image]: https://i.creativecommons.org/l/by-sa/3.0/88x31.png
+[cc-by]: https://creativecommons.org/licenses/by/3.0/
+[cc-by-image]: https://licensebuttons.net/l/by/3.0/88x31.png
 [discord]: https://discord.gg/XkphRqb
 [wiki]: https://jubilee3d.com/
