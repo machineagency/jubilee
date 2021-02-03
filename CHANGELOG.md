@@ -5,6 +5,7 @@ All changes between releases are tracked here.
 ## upcoming rel/jubilee 2.2.1 - Feb (?)
 - The four M3 12mm screws on the front carriage have been swapped for the four M3 10mm screws on the back Z axis. Screw count did not change.
 - Flipped Wedge Plate Orientation in the Tool Template Model. Preliminary tests show that this shape makes the tool plate much more resilient to creep.
+- Flipped Wedge Plate Orientation in the Default BMG Tool for same reasons above. (Instructions also regenerated.)
 
 ## rel/jubilee 2.2.0 - Dec 2, 2020
 - More Permissive License!
