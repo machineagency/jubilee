@@ -114,8 +114,8 @@ M566 E3000:3000                         ; Maximum jerk speeds (mm/min)
 M92 E830:830                            ; BMG Extruder - 0.9 deg/step Tool0:Tool1
 M308 S1 P"spi.cs1" Y"rtd-max31865"      ; define PT100-style E0 temperature sensor
 M308 S2 P"spi.cs2" Y"rtd-max31865"      ; define PT100-style E1 temperature sensor
-;M308 S1 P"e0_temp" Y"pt1000" R4700      ; define PT1000-style E0 temperature sensor
-;M308 S2 P"e1_temp" Y"pt1000" R4700      ; define PT1000-style E1 temperature sensor
+;M308 S1 P"e0_temp" Y"pt1000"           ; define PT1000-style E0 temperature sensor
+;M308 S2 P"e1_temp" Y"pt1000"           ; define PT1000-style E1 temperature sensor
 M143 H1 S260                            ; Maximum H1 (Extruder 0) heater temperature
 M143 H2 S260                            ; Maximum H2 (Extruder 1) heater temperature
 M950 F0	C"fan0"                         ; Fan 0, part cooler fan on Tool 0
