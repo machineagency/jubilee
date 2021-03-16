@@ -83,6 +83,19 @@ M92 E830                                ; Extruder - 0.9 deg/step
 M208 X-13.75:313.75 Y-44:341 Z-0.2:305
 M208 U0:200                                 ; Set Elastic Lock (U axis) max rotation angle
 
+;Mesh Bed Leveling Settings:
+M557 X10:290 Y10:290 P6
+
+; Z probing settings
+M558 P4 C2 H5 A1 T10000  S0.02
+; P4 --> probe type: switch
+; C2 --> endstop number
+; H5 --> dive height
+; A1 --> max number of times to probe
+; T100000 --> travel speed between probe points
+; S0.02 --> tolerance when probing multiple times
+G31 K0 X0 Y0 Z0 ; Zero out default RRF 0.7mm z offset on probe 0
+
 ; Thermistors
 M305 P0 S"Bed" T10000 B3435 H0                ; BOM-specified Adjusted Terminal Lug Thermistor values.
 ;M305 P0 S"Bed" T10000 B3984 H0 L160          ; BOM-specified Terminal Lug Thermistor values.
@@ -116,17 +129,6 @@ M572 D1 S0.1                            ; Set pressure advance on Extruder Drive
 M106 P0 S0                               ; Turn off fan 0
 ;M106 P1 S0                               ; Turn off fan 1
 
-;Mesh Bed Leveling Settings:
-M557 X10:290 Y10:290 P6
-
-; Z probing settings
-M558 P4 C2 H5 A1 T10000  S0.02
-; P4 --> probe type: switch
-; C2 --> endstop number
-; H5 --> dive height
-; A1 --> max number of times to probe
-; T100000 --> travel speed between probe points
-; S0.02 --> tolerance when probing multiple times
 
 M593 F33.33  ; Reduce resonances at 33Hz based on XY vibration pattern on prints. This value could use a second opinion.
 
