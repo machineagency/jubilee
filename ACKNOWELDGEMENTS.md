@@ -14,6 +14,7 @@ Here's the (growing!) list of referenced projects and contributors
 * @marioquake on Github for suggesting a well-placed spacer
 * @Ocho Camino on Discord for an improved Power Inlet Socket
 * @Troll on Discord for a fantastic Logo on the bed plate rendering
+* @edthesped for the "Cappuccino"-tested Fan Shroud
 
 ## Manufacturing and Supplier Acknowledgements
 * Matthew White at 713Maker
