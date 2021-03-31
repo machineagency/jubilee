@@ -8,6 +8,7 @@ All changes between releases are tracked here.
 - Flipped Wedge Plate Orientation in the Default BMG Tool for same reasons above. (Instructions also regenerated.)
 - Added Tool Wings to the Tool Template (2 variants in Solidworks, STEP, and STL)
 - Back Panel supports hole patterns for (1) Duet 3 Mini + 3HC, (2) Duet 2 + Duex5, (3) Duet 3 + 2 3HC's
+- Updated Default BMG Tool Fan Shroud to @edthesped's "Cappuccino" fan shroud.
 
 ## rel/jubilee 2.2.0 - Dec 2, 2020
 - More Permissive License!
