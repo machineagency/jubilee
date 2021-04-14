@@ -116,6 +116,8 @@ M308 S1 P"spi.cs1" Y"rtd-max31865"      ; define PT100-style E0 temperature sens
 M308 S2 P"spi.cs2" Y"rtd-max31865"      ; define PT100-style E1 temperature sensor
 ;M308 S1 P"e0_temp" Y"pt1000"           ; define PT1000-style E0 temperature sensor
 ;M308 S2 P"e1_temp" Y"pt1000"           ; define PT1000-style E1 temperature sensor
+;M308 S1 P"e0_temp" Y"thermistor" T100000 B4725 C0.0000000706 ; define standard E3d E0 temperature sensor
+;M308 S2 P"e1_temp" Y"thermistor" T100000 B4725 C0.0000000706 ; define standard E3d E1 temperature sensor
 M143 H1 S260                            ; Maximum H1 (Extruder 0) heater temperature
 M143 H2 S260                            ; Maximum H2 (Extruder 1) heater temperature
 M950 F0	C"fan0"                         ; Fan 0, part cooler fan on Tool 0
@@ -139,5 +141,7 @@ M572 D1 S0.025                          ; Set pressure advance on Extruder Drive
 
 
 M593 P1 F27  ; ZVD input shaper at 27Hz (RRF 3.3+)
+
+;M575 P1 S1 B57600   ; Enable PanelDue Functionality
 
 M501                                    ; Load saved parameters from non-volatile memory
