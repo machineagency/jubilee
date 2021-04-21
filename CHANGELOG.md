@@ -9,7 +9,9 @@ All changes between releases are tracked here.
 - Added Tool Wings to the Tool Template (2 variants in Solidworks, STEP, and STL)
 - Back Panel supports hole patterns for (1) Duet 3 Mini + 3HC, (2) Duet 2 + Duex5, (3) Duet 3 + 2 3HC's
 - On Back Panel, removed Tool Wiring Cable feedthrough holes
-- Updated Default BMG Tool Fan Shroud to @edthesped's "Cappuccino" fan shroud.
+- Updated Default BMG Tool Fan Shroud to @edthesped's "Cappuccino" fan shroud. Uses 5015 fans instead of 4020 fans.
+- Added 2mm slot width to Cappuccino fan for extra vertical adjustment.
+- Added second Cappuccino fan model with wider slot for [Mechatronics 5015 fans](https://www.mechatronics.com/pdf/B5015.pdf)
 - Added pics to BMG Tool instructions. Fixes [#107](https://github.com/machineagency/jubilee/issues/107) and [#143](https://github.com/machineagency/jubilee/issues/143)
 
 ## rel/jubilee 2.2.0 - Dec 2, 2020
