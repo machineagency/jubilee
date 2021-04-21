@@ -13,6 +13,7 @@ All changes between releases are tracked here.
 - Added 2mm slot width to Cappuccino fan for extra vertical adjustment.
 - Added second Cappuccino fan model with wider slot for [Mechatronics 5015 fans](https://www.mechatronics.com/pdf/B5015.pdf)
 - Added pics to BMG Tool instructions. Fixes [#107](https://github.com/machineagency/jubilee/issues/107) and [#143](https://github.com/machineagency/jubilee/issues/143)
+- Merged [PR from Olby](https://github.com/machineagency/jubilee/pull/179) which updates the Duet3 Wiring Diagram to be in sync with the config files.
 
 ## rel/jubilee 2.2.0 - Dec 2, 2020
 - More Permissive License!
