@@ -121,8 +121,13 @@ M574 Y1 S1 P"^io2.in"  ; homing position Y1 = low-end, type S1 = switch
 
 M574 Z0                ; we will use the switch as a Z probe not endstop 
 M558 P8 C"io3.in" H3 F360 T6000 ; H = dive height F probe speed T travel speed
-G31 P200 X0 Y0 Z-1     ; Switch free position 7.2, Operating pos 6.4+-.2mm 
-                       ; 7.2-6.2 = 1mm, set Z to worst case free position
+G31 K0 X0 Y0 Z-2    ; Set the limit switch position as the  "Control Point."
+                    ; Note: the switch free (unclicked) position is 7.2mm,
+                    ; but the operating position (clicked) is 6.4 +/- 0.2mm. 
+                    ; A 1mm offset (i.e: 7.2-6.2 = 1mm) would be the 
+                    ; Z to worst-case free position, but we add an extra 1mm
+                    ; such that XY travel moves across the bed when z=0
+                    ; do *not* scrape or shear the limit switch.
 
 ; Set axis software limits and min/max switch-triggering positions.
 ; Adjusted such that (0,0) lies at the lower left corner of a 300x300mm square 

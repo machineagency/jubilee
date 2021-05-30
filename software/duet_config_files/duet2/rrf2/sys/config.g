@@ -94,7 +94,13 @@ M558 P4 C2 H5 A1 T10000  S0.02
 ; A1 --> max number of times to probe
 ; T100000 --> travel speed between probe points
 ; S0.02 --> tolerance when probing multiple times
-G31 K0 X0 Y0 Z0 ; Zero out default RRF 0.7mm z offset on probe 0
+G31 K0 X0 Y0 Z-2    ; Set the limit switch position as the  "Control Point."
+                    ; Note: the switch free (unclicked) position is 7.2mm,
+                    ; but the operating position (clicked) is 6.4 +/- 0.2mm. 
+                    ; A 1mm offset (i.e: 7.2-6.2 = 1mm) would be the 
+                    ; Z to worst-case free position, but we add an extra 1mm
+                    ; such that XY travel moves across the bed when z=0
+                    ; do *not* scrape or shear the limit switch.
 
 ; Thermistors
 M305 P0 S"Bed" T10000 B3435 H0                ; BOM-specified Adjusted Terminal Lug Thermistor values.

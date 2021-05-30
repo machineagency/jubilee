@@ -2,6 +2,17 @@
 
 All changes between releases are tracked here.
 
+
+## rel/jubilee 2.2.2 - June 2021
+- *in progress:* primary working branch renamed from *master* to *main*
+- Added X-axis Limit Switch Hardstop
+- Moved the "Control Point" down to 2mm below the Z limit switch trigger position. (G31 in the config.) This change adds clearance to ensure that travel moves with not tools when z=0 do not shear the limit switch.
+
+### Shopping List Changes
+- Fastener Sheet
+  - +1 M3, 16mm screw (for the X-axis limit switch hardstop)
+  - -1 M3, 10mm screw (swapped out for the 16mm one)
+
 ## rel/jubilee 2.2.1 - Apr 21, 2021
 - Updated Electronics Back Panel!
   - Back Panel supports hole patterns for (1) Duet 3 Mini + 3HC, (2) Duet 2 + Duex5, and (3) Duet 3 + 2 3HC's
