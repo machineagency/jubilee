@@ -4,7 +4,7 @@ All changes between releases are tracked here.
 
 
 ## rel/jubilee 2.2.2 - June 2021
-- *in progress:* primary working branch renamed from *master* to *main*
+- primary working branch renamed from *master* to *main*
 - Added X-axis Limit Switch Hardstop
 - Moved the "Control Point" down to 2mm below the Z limit switch trigger position. (G31 in the config.) This change adds clearance to ensure that travel moves with not tools when z=0 do not shear the limit switch.
 
