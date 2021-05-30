@@ -74,7 +74,7 @@ M208 X-13.75:313.75 Y-44:341 Z-0.2:305
 M208 U0:200                                 ; Set Elastic Lock (U axis) max rotation angle
 
 ; Machine Thermistors
-M308 S0 S"bed_temp" T100000 B3950 R4700 ; Define built-in Keenovo Bed Thermistor values.
+M308 S0 S"bed_temp" Y"thermistor" T100000 B3950 R4700 ; Define built-in Keenovo Bed Thermistor values.
 ;M308 S0 P"bed_temp" Y"thermistor" T10000 B3435 ; Define BOM-specified replaceable bed thermistor (with adjusted B value)
 M308 S4 Y"drivers" A"DRIVERS"           ; Define sensor 4 as temperature warning and overheat flags on the TMC2660 on Duet
 M308 S5 Y"mcu-temp" A"MCU"              ; Define sensor 5 as thermistor on pin e1temp for left stepper
