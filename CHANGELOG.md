@@ -6,12 +6,16 @@ All changes between releases are tracked here.
 ## rel/jubilee 2.2.2 - June 2021
 - primary working branch renamed from *master* to *main*
 - Added X-axis Limit Switch Hardstop
+- Added Z-axis Hard Stops to prevent permanent machine damage in the case of a failed/misconfigured Z limit switch.
+  - 3-point bed leveling needs to start very close to level now, but a broken Z limit switch will no longer warp the crossbar or bed plate. Note that the three Z-axis linear rails must be 400mm long. small adjustments need to be made to the assembly if the rails are actually 395mm (HIWIN).
 - Moved the "Control Point" down to 2mm below the Z limit switch trigger position. (G31 in the config.) This change adds clearance to ensure that travel moves with not tools when z=0 do not shear the limit switch.
+- T8x4 leadscrews are now the default in the BOM
 
 ### Shopping List Changes
 - Fastener Sheet
   - +1 M3, 16mm screw (for the X-axis limit switch hardstop)
   - -1 M3, 10mm screw (swapped out for the 16mm one)
+  - T8x4 Leadscrews changed to default. T8x2 Leadscrews changed to alternate.
 
 ## rel/jubilee 2.2.1 - Apr 21, 2021
 - Updated Electronics Back Panel!
