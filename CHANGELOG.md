@@ -4,6 +4,8 @@ All changes between releases are tracked here.
 
 
 ## rel/jubilee 2.2.2 - June 2021
+- Preliminary SuperSlicer Config Added
+  - Note that this config alters the machine jerk settings to produce good quality prints at high speeds.
 - primary working branch renamed from *master* to *main*
 - Added X-axis Limit Switch Hardstop
 - Added Z-axis Hard Stops to prevent permanent machine damage in the case of a failed/misconfigured Z limit switch.
