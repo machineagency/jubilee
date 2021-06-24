@@ -4,7 +4,8 @@ All changes between releases are tracked here.
 
 
 ## rel/jubilee 2.2.2 - June 2021
-- Preliminary SuperSlicer Config Added
+- Added Diagrams for Duet 3 Mini Wire Harnesses with lengths and connectors
+- Added preliminary SuperSlicer Config
   - Note that this config alters the machine jerk settings to produce good quality prints at high speeds.
 - primary working branch renamed from *master* to *main*
 - Added X-axis Limit Switch Hardstop
