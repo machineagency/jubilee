@@ -2,6 +2,11 @@
 
 All changes between releases are tracked here.
 
+## TODO:
+- Update CCP-04 --> CCP-05
+  - added space in the center
+- Update Twist Lock spacer to be easier to print
+- Add Hard Stop on Nema14 Stepper to prevent it from twisting. Even a screw head would help.
 
 ## rel/jubilee 2.2.2 - June 2021
 - Added Diagrams for Duet 3 Mini Wire Harnesses with lengths and connectors
