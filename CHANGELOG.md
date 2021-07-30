@@ -9,6 +9,7 @@ All changes between releases are tracked here.
 - Add Hard Stop on Nema14 Stepper to prevent it from twisting. Even a screw head would help.
 
 ## Upcoming: rel/jubilee 2.2.2 - eta: July 2021
+- Added Tool Interface Diagram to help show spatial constraints when designing custom tools.
 - Added Diagrams for Duet 3 Mini Wire Harnesses with lengths and connectors
 - Added preliminary SuperSlicer Config
   - Note that this config alters the machine jerk settings to produce good quality prints at high speeds.
