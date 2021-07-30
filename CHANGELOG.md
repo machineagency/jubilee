@@ -8,7 +8,7 @@ All changes between releases are tracked here.
 - Update Twist Lock spacer to be easier to print
 - Add Hard Stop on Nema14 Stepper to prevent it from twisting. Even a screw head would help.
 
-## rel/jubilee 2.2.2 - June 2021
+## Upcoming: rel/jubilee 2.2.2 - eta: July 2021
 - Added Diagrams for Duet 3 Mini Wire Harnesses with lengths and connectors
 - Added preliminary SuperSlicer Config
   - Note that this config alters the machine jerk settings to produce good quality prints at high speeds.
