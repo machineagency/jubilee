@@ -6,9 +6,11 @@ All changes between releases are tracked here.
 - Update CCP-04 --> CCP-05
   - added space in the center
 - Update Twist Lock spacer to be easier to print
-- Add Hard Stop on Nema14 Stepper to prevent it from twisting. Even a screw head would help.
 
 ## Upcoming: rel/jubilee 2.2.2 - eta: July 2021
+- Remodeled Adjustable Parking Post. Both dowel pin height and width are now adjustable.
+  - minimum dowel pin spacing can now be as thin as 35mm.
+- Added Hard Stop on Nema14 Stepper to prevent it from twisting when locking tools.
 - Added Tool Interface Diagram to help show spatial constraints when designing custom tools.
 - Added Diagrams for Duet 3 Mini Wire Harnesses with lengths and connectors
 - Added preliminary SuperSlicer Config
@@ -24,6 +26,8 @@ All changes between releases are tracked here.
 - Fastener Sheet
   - +1 M3, 16mm screw (for the X-axis limit switch hardstop)
   - -1 M3, 10mm screw (swapped out for the 16mm one)
+  - +2 M3 Heat Set Inserts
+  - +2 M3 set screws, 10mm long
   - T8x4 Leadscrews changed to default. T8x2 Leadscrews changed to alternate.
 
 ## rel/jubilee 2.2.1 - Apr 21, 2021
