@@ -8,6 +8,11 @@ All changes between releases are tracked here.
 - Update Twist Lock spacer to be easier to print
 
 ## Upcoming: rel/jubilee 2.2.2 - eta: July 2021
+- Added a new default tool based on the Orbiter 1.5 Extruder, the "Baby Bullet"
+  - approx. 370 grams, about 80 grams lighter than the original default BMG Tool
+  - features dual 5015 Blower Fans
+  - includes step-by-step instructions
+  - additional provisioning info is in the [wiki](https://jubilee3d.com/index.php?title=Baby_Bullet_Extruder)
 - Remodeled Adjustable Parking Post. Both dowel pin height and width are now adjustable.
   - minimum dowel pin spacing can now be as thin as 35mm.
 - Added Hard Stop on Nema14 Stepper to prevent it from twisting when locking tools.
