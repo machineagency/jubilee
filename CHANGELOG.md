@@ -9,6 +9,7 @@ All changes between releases are tracked here.
 
 ## Upcoming: rel/jubilee 2.2.2 - eta: Oct 2021
 - Added a new default tool based on the Orbiter 1.5 Extruder, the "Baby Bullet"
+  - E3D "Groovemount" and threaded heatsink compatible for V6 and V7 style hotends
   - approx. 370 grams, about 80 grams lighter than the original default BMG Tool
   - features dual 5015 Blower Fans
   - includes step-by-step instructions
