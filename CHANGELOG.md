@@ -19,6 +19,7 @@ All changes between releases are tracked here.
   - can be fabricated from laser-cut, 3d printed, and off the shelf hardware
 - Remodeled Adjustable Parking Post. Both dowel pin height and width are now adjustable.
   - minimum dowel pin spacing can now be as thin as 35mm.
+- Added new PSU Socket Holder for [Astrodyne 084.01001.00-RSI](https://www.mouser.com/ProductDetail/Astrodyne-TDI/0840100100-RSI?qs=%2Fha2pyFaduhZTNsKVN5ofeyM3JC9w%252BDIG430JA1T72YUHkVm382MJyL%2FonM07LDs) Power Inlet Sockets. (These require 2x fuses.)
 - Added Hard Stop on Nema14 Stepper to prevent it from twisting when locking tools.
 - Added Tool Interface Diagram to help show spatial constraints when designing custom tools.
 - Added Diagrams for Duet 3 Mini Wire Harnesses with lengths and connectors
