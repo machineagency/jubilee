@@ -2,10 +2,12 @@
 
 All changes between releases are tracked here.
 
-## TODO:
-- Update CCP-04 --> CCP-05
-  - added space in the center
-- Update Twist Lock spacer to be easier to print
+## TODO
+- update Heat set insert instructions to include RLB-11
+- update REL instructions
+- Add instructions for Astrodyne PSU
+- snapshot old BOM
+- update BOM
 
 ## Upcoming: rel/jubilee 2.2.2 - eta: Oct 2021
 - Added a new default tool based on the Orbiter 1.5 Extruder, the "Baby Bullet"
@@ -14,12 +16,13 @@ All changes between releases are tracked here.
   - features dual 5015 Blower Fans
   - includes step-by-step instructions
   - additional provisioning info is in the [wiki](https://jubilee3d.com/index.php?title=Baby_Bullet_Extruder)
+- Added M12 Threaded Heatsink Wrench
 - Added custom bed plate for lab automation
   - holds up to 6 well plates of the common well plate size
   - can be fabricated from laser-cut, 3d printed, and off the shelf hardware
 - Remodeled Adjustable Parking Post. Both dowel pin height and width are now adjustable.
   - minimum dowel pin spacing can now be as thin as 35mm.
-- Added new PSU Socket Holder for [Astrodyne 084.01001.00-RSI](https://www.mouser.com/ProductDetail/Astrodyne-TDI/0840100100-RSI?qs=%2Fha2pyFaduhZTNsKVN5ofeyM3JC9w%252BDIG430JA1T72YUHkVm382MJyL%2FonM07LDs) Power Inlet Sockets. (These require 2x fuses.)
+- Added new PSU Socket Holder (PSH2-02) for [Astrodyne 084.01001.00-RSI](https://www.mouser.com/ProductDetail/Astrodyne-TDI/0840100100-RSI?qs=%2Fha2pyFaduhZTNsKVN5ofeyM3JC9w%252BDIG430JA1T72YUHkVm382MJyL%2FonM07LDs) Power Inlet Sockets. (These require 2x fuses.)
 - Added Hard Stop on Nema14 Stepper to prevent it from twisting when locking tools.
 - Added Tool Interface Diagram to help show spatial constraints when designing custom tools.
 - Added Diagrams for Duet 3 Mini Wire Harnesses with lengths and connectors
@@ -31,6 +34,15 @@ All changes between releases are tracked here.
   - 3-point bed leveling needs to start very close to level now, but a broken Z limit switch will no longer warp the crossbar or bed plate. Note that the three Z-axis linear rails must be 400mm long. small adjustments need to be made to the assembly if the rails are actually 395mm (HIWIN).
 - Moved the "Control Point" down to 2mm below the Z limit switch trigger position. (G31 in the config.) This change adds clearance to ensure that travel moves with not tools when z=0 do not shear the limit switch.
 - T8x4 leadscrews are now the default in the BOM
+
+### Changes to Printed Parts
+- Updated Carriage Center Plate CCP-04 --> CCP-05
+  - added space in the center
+- Updated Carriage Back Plate CBP-05 --> CBP-06
+  - made zip tie retention feature easier to print
+  - added clearance for limit switch wires
+- Updated REL Base Plate RLB-10 --> RLB-11
+  - added a retention feature to prevent the motor from twisting.
 
 ### Shopping List Changes
 - Fastener Sheet
