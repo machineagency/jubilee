@@ -2,6 +2,10 @@
 
 All changes between releases are tracked here.
 
+## rel/Jubilee 2.2.3 - In Progress
+- Updated belt tuning frequency from 50 Hz to 61 Hz according to tests made by @Anima on Discord
+  - Prints have noticeably less ringing in corners
+
 ## rel/jubilee 2.2.2 - Oct 16, 2021
 - Added a new default tool based on the Orbiter 1.5 Extruder, the "Baby Bullet"
   - both E3D "Groovemount" and threaded heatsinks are compatible for V6 and V7 style hotends
