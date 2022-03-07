@@ -1,4 +1,4 @@
-Jubilee V2.2.1
+Jubilee V2.2.2
 =======
 
 Jubilee is an open-source, extensible multi-tool motion platform capable of running GCode for non-loadbearing automation applications.
@@ -67,6 +67,7 @@ Read more about the history of Jubilee on [Hackaday](https://hackaday.com/2019/1
 For more community takes, have a look at:
 * [Hackster.io](https://www.hackster.io/news/jubilee-is-an-open-source-motion-platform-that-allows-for-multi-tool-fabrication-213881ee3ce1)
 * [3D Distributed](https://3ddistributed.com/best-corexy-3d-printer-2020/)
+* [3D Printing Today](https://threedprintingtoday.libsyn.com/327_3dprinting_today)
 
 ### Open Source
 Jubilee is licensed under a [Creative Commons Attribution 3.0 Unported License][cc-by] (CC BY 3.0).
