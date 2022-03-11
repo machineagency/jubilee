@@ -70,11 +70,14 @@ For more community takes, have a look at:
 * [3D Printing Today](https://threedprintingtoday.libsyn.com/327_3dprinting_today)
 
 ### Open Source
-Jubilee is licensed under a [Creative Commons Attribution 3.0 Unported License][cc-by] (CC BY 3.0).
-[![CC BY 3.0][cc-by-image]][cc-by]
+Jubilee is licensed under a [Creative Commons Attribution 4.0 Unported License][cc-by] (CC BY 4.0).
+and [Certified Open Source Hardware](https://certification.oshwa.org/us002091.html).
+
+[![CC BY 4.0][cc-by-image]][cc-by] 
+
 
 [bom]: https://docs.google.com/spreadsheets/d/1pRzBQxVzL9c4T9b1RrKvSjlSwJJhJ7NcbSV6iJUv0X0/edit#gid=0
-[cc-by]: https://creativecommons.org/licenses/by/3.0/
-[cc-by-image]: https://licensebuttons.net/l/by/3.0/88x31.png
+[cc-by]: https://creativecommons.org/licenses/by/4.0/
+[cc-by-image]: https://licensebuttons.net/l/by/4.0/88x31.png
 [discord]: https://discord.gg/XkphRqb
 [wiki]: https://jubilee3d.com/
