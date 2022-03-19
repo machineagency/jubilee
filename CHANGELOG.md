@@ -5,7 +5,9 @@ All changes between releases are tracked here.
 ## rel/Jubilee 2.2.3 - In Progress
 - Updated belt tuning frequency from 50 Hz to 61 Hz according to tests made by @Anima on Discord
   - Prints have noticeably less ringing in corners
+- REL bugfixes
 - Added Duet3 Mini Configuration
+- Side Note: in a collaboration with Filastruder and Luke's Laboratory, [Jubilee Kits](https://www.filastruder.com/products/jubilee-motion-platform-kit?_pos=5&_sid=a2f60c0c4&_ss=r) for 2.2.2 entered the world on Feb 10, 2022
 
 ## rel/jubilee 2.2.2 - Oct 16, 2021
 - Added a new default tool based on the Orbiter 1.5 Extruder, the "Baby Bullet"
