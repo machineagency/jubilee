@@ -6,6 +6,10 @@ All changes between releases are tracked here.
 - Updated belt tuning frequency from 50 Hz to 61 Hz according to tests made by @Anima on Discord
   - Prints have noticeably less ringing in corners
 - REL bugfixes
+- Instuctions updates
+  - added notes about PSU internal fuses
+- Baby Bullet Compatibility added for Orbiter V2.0
+  - Added clip for wire harnesses and updated instructions
 - Added Duet3 Mini Configuration
 - Side Note: in a collaboration with Filastruder and Luke's Laboratory, [Jubilee Kits](https://www.filastruder.com/products/jubilee-motion-platform-kit?_pos=5&_sid=a2f60c0c4&_ss=r) for 2.2.2 entered the world on Feb 10, 2022
 
