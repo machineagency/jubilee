@@ -10,6 +10,7 @@ All changes between releases are tracked here.
 - Baby Bullet Compatibility added for Orbiter V2.0
   - Added clip for wire harnesses and updated instructions
 - Added Duet3 Mini Config files
+- Added Duet Panel Layout PDF to show back panel mounting locations
 - Side Note: in a collaboration with Filastruder and Luke's Laboratory, [Jubilee Kits](https://www.filastruder.com/products/jubilee-motion-platform-kit?_pos=5&_sid=a2f60c0c4&_ss=r) for 2.2.2 entered the world on Feb 10, 2022
 
 ## rel/jubilee 2.2.2 - Oct 16, 2021
