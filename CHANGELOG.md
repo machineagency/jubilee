@@ -9,6 +9,8 @@ All changes between releases are tracked here.
   - added notes about PSU internal fuses.
 - Baby Bullet Compatibility added for Orbiter V2.0
   - Added clip for wire harnesses and updated instructions
+- Baby Bullet fan shroud update
+  - improved fan angle stops cooling the heater block
 - Added Duet3 Mini Config files
 - Added Duet Panel Layout PDF to show back panel mounting locations
 - Side Note: in a collaboration with Filastruder and Luke's Laboratory, [Jubilee Kits](https://www.filastruder.com/products/jubilee-motion-platform-kit?_pos=5&_sid=a2f60c0c4&_ss=r) for 2.2.2 entered the world on Feb 10, 2022
