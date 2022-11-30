@@ -45,6 +45,8 @@ inside these folders, you'll usually find a folder structure that looks like thi
     * **STEP**
 * **fabrication\_exports** contains STLs, DXFs, and other files used to fabricate pieces of Jubilee
 
+The Jubilee repository is quite large. To clone the repository locally without fetching the entire history, you can use `git clone --depth=1 https://github.com/machineagency/jubilee.git`.
+
 ## Support
 
 Have questions? Building your own Jubilee? **[Join the Discord!][discord]**
