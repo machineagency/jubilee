@@ -11,9 +11,14 @@ All changes between releases are tracked here.
   - Added Orbiter V2.0 clip for wire harnesses and updated instructions
   - Fan shrouds direct airflow lower (below the nozzle tip).
   - Added printed parts for mounting a Revo Micro
+  - TODO: Updated Solidworks
+  - TODO: Added STEP export of Orbiter 2.0 configuration.
 - Added Duet3 Mini Config files
 - Added Duet Panel Layout PDF to show back panel mounting locations
 - Side Note: in a collaboration with Filastruder and Luke's Laboratory, [Jubilee Kits](https://www.filastruder.com/products/jubilee-motion-platform-kit?_pos=5&_sid=a2f60c0c4&_ss=r) for 2.2.2 entered the world on Feb 10, 2022
+- Side Note: [Extruder Wire Harnesses](https://lukeslabonline.com/products/jubilee-tool-harness?_pos=1&_sid=1c51388a3&_ss=r) are now available through Luke's Laboratory
+- TODO: Added Superslicer configuration
+- TODO: add leveling feet
 
 ## rel/jubilee 2.2.2 - Oct 16, 2021
 - Added a new default tool based on the Orbiter 1.5 Extruder, the "Baby Bullet"
