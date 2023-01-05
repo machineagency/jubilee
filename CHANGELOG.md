@@ -7,6 +7,8 @@ All changes between releases are tracked here.
   - Prints have noticeably less periodic ringing and ringing in corners.
 - Instuctions updates
   - added notes about PSU internal fuses.
+  - fixed ZL, ZR, ZB mixup in duet 3 wiring pdf.
+- Improved Parking Post design to accommodate more extreme sizes
 - Baby Bullet
   - Added Orbiter V2.0 clip for wire harnesses and updated instructions
   - Fan shrouds direct airflow lower (below the nozzle tip).
