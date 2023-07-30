@@ -68,8 +68,8 @@ M671 X297.5:2.5:150 Y313.5:313.5:-16.5 S10 ; Front Left: (297.5, 313.5)
 ;-------------------------------------------------------------------------------
 
 M350 X1 Y1 Z1 U1       ; Disable microstepping to simplify calculations.
-M92 X{1/(1.8*16/180)}  ; step angle * tooth count / 180 .
-M92 Y{1/(1.8*16/180)}  ; The 2mm tooth spacing cancel out with diam to radius.
+M92 X{1/(0.9*16/180)}  ; step angle * tooth count / 180 .
+M92 Y{1/(0.9*16/180)}  ; The 2mm tooth spacing cancel out with diam to radius.
 M92 Z{360/0.9/4}       ; 0.9 deg stepper / screw lead pitch (4mm) .
                        ; If using a T8x2 leadscrew, change 4 to 2.
 M92 U{13.76/1.8}       ; gear ratio / step angle for tool lock geared motor.
